@@ -1,0 +1,193 @@
+/**
+ ** GENERAL
+ **/
+
+//.cell{ border:1px solid red;}
+
+@mixin transition($transition...) {
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-webkit-transition: $transition;
+	transition: $transition;
+}
+
+@mixin background($filename, $width, $height) {
+	background: url(../../assets/img/#{$filename}) no-repeat;
+	width: $width;
+	height: $height;
+}
+/**
+ ** HEADER
+ **/
+
+header {
+	padding-top: 1rem;
+	.logo {
+	}
+	.slogan {
+		padding-top: 0.625rem;
+		font-size: 2rem;
+		font-weight: bold;
+		color: $primary-color;
+	}
+	.menu {
+		padding: 0.5rem 0;
+		a {
+			color: $black;
+			font-size: 0.9rem;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+/**
+ ** FOOTER
+ **/
+footer {
+	.top {
+		background: $primary-color;
+		.menu {
+			a {
+				color: $white;
+			}
+		}
+	}
+	.bottom {
+		background: $dark-gray;
+		padding: 1rem 0;
+		p {
+			color: $white;
+			font-size: 0.8rem;
+			line-height: 1rem;
+			margin-bottom: 0.5rem;
+		}
+		a {
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+}
+.topbar-responsive {
+	background: $primary-color;
+	padding: 0;
+	.menu {
+		background: $primary-color;
+		padding: 0;
+		li:last-of-type {
+			margin-right: 0;
+		}
+
+		a {
+			color: $white;
+			transition: color 0.15s ease-in;
+			padding: 0.825rem 1.0rem;
+			@include transition(background-color .4s);
+
+			@media screen and (max-width: 39.9375em) {
+				padding: 0.875rem 1rem;
+			}
+			&:hover {
+				background-color: darken($primary-color, 10%);
+			}
+		}
+	}
+
+	@media screen and (max-width: 39.9375em) {
+		.top-bar-title {
+			position: relative;
+			width: 100%;
+
+			span {
+				position: absolute;
+				right: 0;
+				border: 1px solid $white;
+				border-radius: 5px;
+				padding: 0.25rem 0.45rem;
+				top: 50%;
+				transform: translateY(-50%);
+
+				.menu-icon {
+					margin-bottom: 4px;
+				}
+			}
+		}
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@include breakpoint(small only) {
+	.topbar-responsive-links {
+		animation-fill-mode: both;
+		animation-duration: 0.5s;
+		width: 100%;
+		animation: slideDown 1s ease-in;
+	}
+}
+
+#category-boxes {
+	.grid-10 {
+		margin: 0.825rem -0.46875rem;
+
+		.cell {
+			@include xy-cell(1 of 10,true, 15px, margin, right left);
+			@include breakpoint(small only) {
+				@include xy-cell(1 of 5,true, 10px, margin, right left);
+			}
+		}
+		.card {
+			border: 0;
+			border-radius: 3px;
+			.card-section {
+				background-color: rgba(255, 255, 255, 0.9);
+				$caption-height: 2.2rem;
+				margin-top: -$caption-height;
+				height: $caption-height;
+				padding: 0.3rem 0.25rem;
+				@include transition(background-color .2s, margin-top .2s, height .2s);
+				p {
+					font-size: 0.625rem;
+					line-height: 0.825rem;
+				}
+			}
+			&:hover {
+				.card-section {
+					background-color: $primary-color;
+					color: $white;
+					$caption-height: 2.8rem;
+					margin-top: -$caption-height;
+					height: $caption-height;
+				}
+			}
+		}
+	}
+}
+.main-column{
+  .card {
+    .card-divider {
+      color: $white;
+      background: $secondary-color;
+      padding: 0.6rem 0.5rem 0.6rem 2rem;
+      font-weight: bold;
+    }
+  }
+}
+
