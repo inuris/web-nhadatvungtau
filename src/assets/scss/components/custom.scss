@@ -11,7 +11,7 @@
 	transition: $transition;
 }
 
-@mixin background($filename, $width, $height) {
+@mixin background($filename, $width:100%, $height:100%, $background-position: left top) {
 	background: url(../../assets/img/#{$filename}) no-repeat;
 	width: $width;
 	height: $height;
@@ -160,7 +160,7 @@ footer {
 				margin-top: -$caption-height;
 				height: $caption-height;
 				padding: 0.3rem 0.25rem;
-				@include transition(background-color .2s, margin-top .2s, height .2s);
+				@include transition(all 0.2s);
 				p {
 					font-size: 0.625rem;
 					line-height: 0.825rem;
@@ -178,14 +178,187 @@ footer {
 		}
 	}
 }
-.main-column{
-  .card {
-    .card-divider {
-      color: $white;
-      background: $secondary-color;
-      padding: 0.6rem 0.5rem 0.6rem 2rem;
-      font-weight: bold;
+.box {
+  margin-bottom: 1rem;  
+  .title-bar {
+    color: $white;
+    background: $secondary-color;
+    padding: 0;
+    font-weight: bold;
+    position: relative;
+    height:40px;
+    h2{
+      font-size: 1rem;
+      padding: 0 1rem;
+      line-height: 2rem;
+      font-weight:bold;
+      margin:0;
+    }
+    a{
+      color:$white;
+      margin-right:1rem;
+      font-size: 0.825rem;
+    }    
+  }
+  .mark-orange{
+    b{
+      padding: 0 0.3rem;
+    }
+    &:before{
+      content:'';
+      @include background('icon-title-arrow.svg', 20px, 40px);
+    }      
+  }
+  .box-container{
+    padding: 1rem;    
+    border: 1px solid $light-gray;
+
+    .thumbnail{
+      overflow: hidden;
+      border: none;
+      box-shadow: none;
+      margin-bottom:0.5rem;
+      @include breakpoint(small only) {
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
+      &:hover{        
+        img{
+          @include transition(all 0.5s ease-in-out);
+          transform: scale(1.1);
+        }
+      }
+    }
+    .content{
+      h4{
+        font-size: 1rem;
+        font-weight: bold;
+        color: $black;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+      p{
+        font-size: 0.825rem;
+      }
+      a.more{
+        font-size: 0.825rem;
+      }
+    }
+    .news-list{
+      .item{        
+        @include background('icon-bullet.svg');
+        background-position: left 0.85rem;
+        border-bottom: 1px dotted $light-gray;        
+        padding: 0.3rem;
+        a{
+          font-size: 0.825rem;
+          line-height: 0.625rem;
+          color: $black;
+          padding-left: 0.8rem;
+          &:hover{
+            color:$primary-color;            
+          }
+        }
+      }
+      .cell:last-child{
+        .item{  
+          border-bottom: 0;  
+        }
+      }
+    }
+
+  }    
+}
+#feature{
+  .item{
+    border-bottom: solid 1px $light-gray;
+    margin-bottom: 1.2rem;
+    h4{
+      &:hover{
+        color: $primary-color;
+      }
+    }
+    .price{
+      p{
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        font-weight: bold;
+        color: $primary-color;
+        @include breakpoint(small only) {
+          font-size: 1.2rem;
+          line-height: 1.2rem;
+        }
+      }
+    }
+    &:last-child{
+      border-bottom: 0;
+    }
+    
+  }  
+}
+#userpost{
+  .item{
+    .content{
+      h4{
+        font-size: 0.825rem;
+        &:hover{
+          color:$primary-color;
+        }
+      } 
+      @include breakpoint(medium up) {
+        margin-left:-0.9375rem;
+      }
+    }
+  }
+  
+      
+}
+#search{
+  .title-bar{
+    background: $tertiary-color;
+  }
+  .box-container{
+    border: 2px solid $tertiary-color;
+    border-top: 0;
+    padding-bottom: 0.25rem;
+    .input-group{
+      margin-bottom:0.4rem;
+      input, select{
+        margin:0 auto;
+        height: 2.1rem;
+        font-size: 0.825rem;
+      }
+      button{
+        font-weight: bold;
+        margin: auto;
+        border-radius: 4px;
+      }
+    }
+  }
+  
+}
+
+#area{
+  .item{        
+    @include background('icon-dot.svg');
+    background-position: left 1rem;     
+    padding: 0.3rem;
+    a{
+      font-size: 0.825rem;
+      line-height: 0.625rem;
+      color: $black;
+      padding: 0 .4rem;
+      &:hover{
+        color:$primary-color;            
+      }
     }
   }
 }
-
+#ads{
+  .item{
+    margin-bottom:1rem;
+  }
+}

@@ -75,6 +75,7 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+$tertiary-color:#21B0DA;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #666666;
@@ -84,8 +85,8 @@ $body-background: $white;
 $body-font-color: $black;
 $body-font-family: Arial, sans-serif;
 $body-antialiased: true;
-$global-margin: 1rem;
-$global-padding: 1rem;
+$global-margin: 0.5rem;
+$global-padding: 0.5rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
@@ -284,10 +285,10 @@ $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-background-hover: scale-color($button-background, $lightness: -20%);
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+$button-radius: 4px;
 $button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
