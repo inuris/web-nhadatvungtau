@@ -16,6 +16,12 @@
 	width: $width;
 	height: $height;
 }
+
+h1{
+  color: $secondary-color;
+  font-size: 1.8rem;
+  font-weight:bold;
+}
 /**
  ** HEADER
  **/
@@ -140,43 +146,42 @@ footer {
 		animation: slideDown 1s ease-in;
 	}
 }
-
+.grid-10 {
+  margin: 0.825rem -0.46875rem;
+  .cell {
+    @include xy-cell(1 of 10,true, 15px, margin, right left);
+    @include breakpoint(small only) {
+      @include xy-cell(1 of 5,true, 10px, margin, right left);
+    }
+  }
+}
 #category-boxes {
-	.grid-10 {
-		margin: 0.825rem -0.46875rem;
-
-		.cell {
-			@include xy-cell(1 of 10,true, 15px, margin, right left);
-			@include breakpoint(small only) {
-				@include xy-cell(1 of 5,true, 10px, margin, right left);
-			}
-		}
-		.card {
-			border: 0;
-			border-radius: 3px;
-			.card-section {
-				background-color: rgba(255, 255, 255, 0.9);
-				$caption-height: 2.2rem;
-				margin-top: -$caption-height;
-				height: $caption-height;
-				padding: 0.3rem 0.25rem;
-				@include transition(all 0.2s);
-				p {
-					font-size: 0.625rem;
-					line-height: 0.825rem;
-				}
-			}
-			&:hover {
-				.card-section {
-					background-color: $primary-color;
-					color: $white;
-					$caption-height: 2.8rem;
-					margin-top: -$caption-height;
-					height: $caption-height;
-				}
-			}
-		}
-	}
+  .card {
+    border: 0;
+    border-radius: 3px;
+    .card-section {
+      background-color: rgba(255, 255, 255, 0.9);
+      $caption-height: 2.2rem;
+      margin-top: -$caption-height;
+      height: $caption-height;
+      padding: 0.3rem 0.25rem;
+      @include transition(all 0.2s);
+      p {
+        font-size: 0.625rem;
+        line-height: 0.825rem;
+      }
+    }
+    &:hover {
+      .card-section {
+        background-color: $primary-color;
+        color: $white;
+        $caption-height: 2.8rem;
+        margin-top: -$caption-height;
+        height: $caption-height;
+      }
+    }
+  }
+	
 }
 .box {
   margin-bottom: 1rem;  
@@ -211,68 +216,79 @@ footer {
   }
   .box-container{
     padding: 1rem;    
-    border: 1px solid $light-gray;
-
-    .thumbnail{
-      overflow: hidden;
-      border: none;
-      box-shadow: none;
-      margin-bottom:0.5rem;
-      @include breakpoint(small only) {
-        width: 100%;
-        img{
-          width: 100%;
-        }
-      }
-      &:hover{        
-        img{
-          @include transition(all 0.5s ease-in-out);
-          transform: scale(1.1);
-        }
-      }
-    }
-    .content{
-      h4{
-        font-size: 1rem;
-        font-weight: bold;
-        color: $black;
-        &:hover{
-          color: $primary-color;
-        }
-      }
-      p{
-        font-size: 0.825rem;
-      }
-      a.more{
-        font-size: 0.825rem;
-      }
-    }
-    .news-list{
-      .item{        
-        @include background('icon-bullet.svg');
-        background-position: left 0.85rem;
-        border-bottom: 1px dotted $light-gray;        
-        padding: 0.3rem;
-        a{
-          font-size: 0.825rem;
-          line-height: 0.625rem;
-          color: $black;
-          padding-left: 0.8rem;
-          &:hover{
-            color:$primary-color;            
-          }
-        }
-      }
-      .cell:last-child{
-        .item{  
-          border-bottom: 0;  
-        }
-      }
-    }
-
-  }    
+    border: 1px solid $light-gray;  
+  }  
+  &.inf{
+    
+  }  
 }
-#feature{
+.no-box {  
+  margin-left:-0.9375rem;
+}
+.box-title{
+
+}
+
+.item{
+  .thumbnail{
+    overflow: hidden;
+    border: none;
+    box-shadow: none;
+    margin-bottom:0.5rem;
+    @include breakpoint(small only) {
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+    &:hover{        
+      img{
+        @include transition(all 0.5s ease-in-out);
+        transform: scale(1.1);
+      }
+    }
+  }
+  .content{
+    h4{
+      font-size: 1rem;
+      font-weight: bold;
+      color: $black;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+    p{
+      font-size: 0.825rem;
+    }
+    a.more{
+      font-size: 0.825rem;
+    }
+  }
+}
+
+.news-list{
+  .item{        
+    @include background('icon-bullet.svg');
+    background-position: left 0.85rem;
+    border-bottom: 1px dotted $light-gray;        
+    padding: 0.3rem;
+    a{
+      font-size: 0.825rem;
+      line-height: 0.625rem;
+      color: $black;
+      padding-left: 0.8rem;
+      &:hover{
+        color:$primary-color;            
+      }
+    }
+  }
+  .cell:last-child{
+    .item{  
+      border-bottom: 0;  
+    }
+  }
+}
+.product{
   .item{
     border-bottom: solid 1px $light-gray;
     margin-bottom: 1.2rem;
@@ -299,6 +315,7 @@ footer {
     
   }  
 }
+
 #userpost{
   .item{
     .content{
@@ -360,5 +377,45 @@ footer {
 #ads{
   .item{
     margin-bottom:1rem;
+  }
+}
+#breadcrumbs{
+  margin-top:0.8rem;
+}
+.product{
+  .title{    
+    margin-bottom:1rem;
+  }
+  nav{
+    margin:auto;
+  }
+}
+#detail{
+  table.info{
+    thead{
+      background:$light-gray;
+    }
+    tr{
+      height: 2rem;
+    }
+    td{
+      font-size: 0.825rem;
+      &.key{
+        font-weight: bold;
+        text-align: right;
+      }
+      &.value{
+        color: $dark-gray;
+        text-align: left;
+        i{
+          color: $primary-color;
+        }
+      }
+      &.price{
+        color:$primary-color;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
   }
 }

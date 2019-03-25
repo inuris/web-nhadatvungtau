@@ -1,0 +1,14 @@
+<div class="grid-container">
+    <div id="category-boxes" class="grid-x grid-10">
+        {{#each category}}
+        <div class="cell">
+        <a href="list.html" class="card">
+            <img src="{{root}}assets/img/{{this.image}}" alt="">
+            <div class="card-section">
+            <p class="text-center">{{this.name}}</p>
+            </div>
+        </a>
+        </div>
+        {{/each}}
+    </div>
+</div>

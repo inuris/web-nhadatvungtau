@@ -12,7 +12,31 @@
 <body>
 
 {{> header}}
-{{> body}}
+
+{{#ifpage 'index'}}
+  {{> categoryboxes}}
+{{/ifpage}}
+{{#ifpage 'list' 'detail'}}
+  {{> breadcrumbs}}
+{{/ifpage}}
+
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="medium-9 cell">
+      {{> body}}
+    </div>
+    <div class="auto cell">
+      {{> sidebar-search}}
+    </div>
+  </div>
+</div>
+  
+
+
+{{#ifpage 'index'}}
+  {{> userpost}}
+{{/ifpage}}
+
 {{> footer}}
 
 <script src="{{root}}assets/js/app.js"></script>

@@ -1,128 +1,83 @@
-<section id="category-boxes">
-  <div class="grid-container">
-    <div class="grid-x grid-10">
-      {{#each category}}
-      <div class="cell">
-        <a href="#" class="card">
-          <img src="{{root}}assets/img/{{this.image}}" alt="">
-          <div class="card-section">
-            <p class="text-center">{{this.name}}</p>
+<div id="news" class="box">
+  <div class="title-bar mark-orange grid-x">
+    <div class="cell shrink">
+      <h2>Tin tức</h2>
+    </div>
+    <div class="cell auto text-right"></div>
+  </div>
+  <div class="box-container grid-x">
+    <div class="main-section cell">
+      <div class="item">
+        <div class="grid-x grid-margin-x">
+          <div class="cell medium-4">
+            <div class="thumbnail">
+              <a href='#'>
+                <img src="{{root}}assets/img/item-1.png">
+              </a>
+            </div>
           </div>
-        </a>
+          <div class="cell medium-8">
+            <div class="content">
+              <a href="#">
+                <h4>Ứng dụng phong thủy trong kinh doanh bất động sản 2019</h4>
+              </a>
+              <p>Sau hơn một tháng triển khai (từ 26/1/2019), “Tính năng nổi bật” trên đã thu hút trên 10% khách
+                hàng sử dụng. Trong đó, số lượng chính khách hàng sử dụng “Tính năng nổi bật” nằm ở các nhóm: Tin
+                Đặc biệt,
+                Tin VIP 1, Tin VIP 2, Tin VIP3.</p>
+              <a class="more" href="#">Xem thêm...</a>
+            </div>
+          </div>
+        </div>
       </div>
-      {{/each}}
     </div>
-  </div>
-</section>
-<div class="grid-container main-column">
-  <div class="grid-x grid-margin-x">
-    <div class="medium-9 cell">
-      <section id="news" class="box">
-        <div class="title-bar mark-orange grid-x">          
-          <div class="cell auto"><h2>Tin tức</h2></div>
-          <div class="cell shrink text-right"></div>          
-        </div>
-        <div class="box-container grid-x">
-          <div class="main-section cell">
-            <div class="grid-x grid-margin-x">
-              <div class="cell medium-4">
-                <div class="thumbnail">
-                  <a href='#'>
-                    <img src="{{root}}assets/img/item-1.png">
-                  </a>
-                </div>
-              </div>
-              <div class="cell medium-8">
-                <div class="content">
-                  <a href="#"><h4>Ứng dụng phong thủy trong kinh doanh bất động sản 2019</h4></a>
-                  <p>Sau hơn một tháng triển khai (từ 26/1/2019), “Tính năng nổi bật” trên đã thu hút trên 10% khách
-                    hàng sử dụng. Trong đó, số lượng chính khách hàng sử dụng “Tính năng nổi bật” nằm ở các nhóm: Tin Đặc biệt,
-                    Tin VIP 1, Tin VIP 2, Tin VIP3.</p>
-                  <a class="more" href="#">Xem thêm...</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="news-list cell small-12 news">
-            <div class="grid-x">    
-              {{#each news}}
-                <div class="cell">
-                  <div class="item">
-                    <a href="#">{{this}}</a>
-                  </div>
-                </div>
-              {{/each}} 
-            </div>
+    <div class="news-list cell small-12 news">
+      <div class="grid-x">
+        {{#each news}}
+        <div class="cell">
+          <div class="item">
+            <a href="#">{{this}}</a>
           </div>
         </div>
-      </section>
-      <section id="feature" class="box">
-        <div class="title-bar mark-orange grid-x">          
-            <div class="cell auto"><h2>Bất Động Sản Nổi Bật</h2></div>
-            <div class="cell shrink text-right"><a href="#">Xem tất cả&nbsp;&nbsp;<i class="fa fa-caret-right"></i></a></div>          
-        </div>
-        <div class="box-container grid-x">
-          {{#each feature}}
-          <div class="cell item">
-            <div class="grid-x grid-margin-x">
-              <div class="cell medium-3 text-center">
-                <div class="thumbnail">
-                  <a href='#'><img src="{{root}}assets/img/item-1.png"></a>
-                </div>
-                <a href="#" class="button small">Chi tiết</a>
-              </div>
-              <div class="cell medium-7 small-9">
-                <div class="content">
-                  <a href="#"><h4>{{this.title}}</h4></a>
-                  <p>{{this.description}}</p>                    
-                </div>
-              </div>
-              <div class="cell medium-2 small-3">
-                  <div class="price">
-                    <p class="text-right">{{this.price}}</p>
-                  </div>
-                </div>
-            </div>
-          </div>
-          {{/each}}
-        </div>
-      </section>
-    </div>
-    <div class="auto cell">
-      {{> sidebar}}
+        {{/each}}
+      </div>
     </div>
   </div>
 </div>
-<div class="grid-container main-column">
-  <div class="grid-x grid-margin-x">
-    <div class="cell">
-      <section id="userpost" class="box">
-        <div class="title-bar mark-orange">
-          <div class="cell auto"><h2>Thông Tin Mua Bán và Cho Thuê</h2></div>
-          <div class="cell shrink text-right"><a href="#">Xem tất cả&nbsp;&nbsp;<i class="fa fa-caret-right"></i></div>
-        </div>
-        <div class="box-container grid-x">
-            {{#each userpost}}
-            <div class="item cell medium-4">
-              <div class="grid-x grid-margin-x">
-                <div class="cell small-4">
-                  <div class="thumbnail">
-                    <a href='#'>
-                      <img src="{{root}}assets/img/item-1.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="cell small-8">
-                  <div class="content">
-                    <a href="#"><h4>{{this}}</h4></a>                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            {{/each}}
-          </div>
-      </section>
+<div id="feature" class="box product">
+  <div class="title-bar mark-orange grid-x">
+    <div class="cell shrink">
+      <h2>Bất Động Sản Nổi Bật</h2>
+    </div>
+    <div class="cell auto text-right"><a href="list.html">Xem tất cả&nbsp;&nbsp;<i
+          class="fa fa-caret-right"></i></a>
     </div>
   </div>
+  <div class="box-container grid-x">
+    {{#each feature}}
+    <div class="cell item">
+      <div class="grid-x grid-margin-x">
+        <div class="cell medium-3 text-center">
+          <div class="thumbnail">
+            <a href='#'><img src="{{root}}assets/img/item-1.png"></a>
+          </div>
+          <a href="#" class="button small">Chi tiết</a>
+        </div>
+        <div class="cell medium-7 small-9">
+          <div class="content">
+            <a href="#">
+              <h4>{{this.title}}</h4>
+            </a>
+            <p>{{this.description}}</p>
+          </div>
+        </div>
+        <div class="cell medium-2 small-3">
+          <div class="price">
+            <p class="text-right">{{this.price}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
 </div>
-

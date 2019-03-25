@@ -1,0 +1,37 @@
+<div class="grid-container">
+    <div class="grid-x grid-margin-x">
+        <div class="cell">
+            <div id="userpost" class="box">
+                <div class="title-bar mark-orange">
+                    <div class="cell shrink">
+                        <h2>Thông Tin Mua Bán và Cho Thuê</h2>
+                    </div>
+                    <div class="cell auto text-right"><a href="list.html">Xem tất cả&nbsp;&nbsp;<i
+                                class="fa fa-caret-right"></i></div>
+                </div>
+                <div class="box-container grid-x">
+                    {{#each userpost}}
+                    <div class="item cell medium-4">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-4">
+                                <div class="thumbnail">
+                                    <a href='#'>
+                                        <img src="{{root}}assets/img/item-1.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cell small-8">
+                                <div class="content">
+                                    <a href="#">
+                                        <h4>{{this}}</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

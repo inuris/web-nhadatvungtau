@@ -1,0 +1,45 @@
+<div id="list" class="no-box product">
+    <div class="grid-x">
+        <div class="title">
+                <h1>Bất Động Sản Nổi Bật</h1>
+        </div>        
+        {{#each feature}}
+        <div class="cell item">
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-3 text-center">
+                    <div class="thumbnail">
+                        <a href='detail.html'><img src="{{root}}assets/img/item-1.png"></a>
+                    </div>
+                    <a href="detail.html" class="button small">Chi tiết</a>
+                </div>
+                <div class="cell medium-7 small-9">
+                    <div class="content">
+                        <a href="detail.html">
+                            <h4>{{this.title}}</h4>
+                        </a>
+                        <p>{{this.description}}</p>
+                    </div>
+                </div>
+                <div class="cell medium-2 small-3">
+                    <div class="price">
+                        <p class="text-right">{{this.price}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        <nav aria-label="Pagination">
+            <ul class="pagination text-center">
+                <li class="pagination-previous disabled">Trước</li>
+                <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                <li><a href="#" aria-label="Page 2">2</a></li>
+                <li><a href="#" aria-label="Page 3">3</a></li>
+                <li><a href="#" aria-label="Page 4">4</a></li>
+                <li class="ellipsis"></li>
+                <li><a href="#" aria-label="Page 12">12</a></li>
+                <li><a href="#" aria-label="Page 13">13</a></li>
+                <li class="pagination-next"><a href="#" aria-label="Next page">Sau</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
