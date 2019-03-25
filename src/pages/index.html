@@ -11,21 +11,21 @@
         <div class="grid-x grid-margin-x">
           <div class="cell medium-4">
             <div class="thumbnail">
-              <a href='#'>
+              <a href='detail.html'>
                 <img src="{{root}}assets/img/item-1.png">
               </a>
             </div>
           </div>
           <div class="cell medium-8">
             <div class="content">
-              <a href="#">
+              <a href="detail.html">
                 <h4>Ứng dụng phong thủy trong kinh doanh bất động sản 2019</h4>
               </a>
               <p>Sau hơn một tháng triển khai (từ 26/1/2019), “Tính năng nổi bật” trên đã thu hút trên 10% khách
                 hàng sử dụng. Trong đó, số lượng chính khách hàng sử dụng “Tính năng nổi bật” nằm ở các nhóm: Tin
                 Đặc biệt,
                 Tin VIP 1, Tin VIP 2, Tin VIP3.</p>
-              <a class="more" href="#">Xem thêm...</a>
+              <a class="more" href="detail.html">Xem thêm...</a>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@
         {{#each news}}
         <div class="cell">
           <div class="item">
-            <a href="#">{{this}}</a>
+            <a href="detail.html">{{this}}</a>
           </div>
         </div>
         {{/each}}
@@ -59,13 +59,13 @@
       <div class="grid-x grid-margin-x">
         <div class="cell medium-3 text-center">
           <div class="thumbnail">
-            <a href='#'><img src="{{root}}assets/img/item-1.png"></a>
+            <a href='detail.html'><img src="{{root}}assets/img/{{this.image}}"></a>
           </div>
-          <a href="#" class="button small">Chi tiết</a>
+          <a href="detail.html" class="button small">Chi tiết</a>
         </div>
         <div class="cell medium-7 small-9">
           <div class="content">
-            <a href="#">
+            <a href="detail.html">
               <h4>{{this.title}}</h4>
             </a>
             <p>{{this.description}}</p>
