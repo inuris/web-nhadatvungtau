@@ -11,34 +11,85 @@
 	transition: $transition;
 }
 
-@mixin background($filename, $width:100%, $height:100%, $background-position: left top) {
+@mixin background($filename) {
 	background: url(../../assets/img/#{$filename}) no-repeat;
-	width: $width;
-	height: $height;
 }
-h1,h2,h3{
-  color: $secondary-color;
-  font-weight:bold;
+h1,
+h2,
+h3 {
+	color: $secondary-color;
+	font-weight: bold;
 }
-h4, h5{
-  color: $black;
-  font-weight:bold;
+h4,
+h5 {
+	color: $black;
+	font-weight: bold;
 }
-h1{  
-  font-size: 1.8rem;  
+h1 {
+	font-size: 1.8rem;
 }
-h2{
-  font-size: 1.6rem;
+h2 {
+	font-size: 1.6rem;
 }
-h3{
-  font-size: 1.4rem;
+h3 {
+	font-size: 1.4rem;
 }
-h4{
-  font-size: 1.1rem;
+h4 {
+	font-size: 1.1rem;
 }
-h5{
-  font-size: 1rem;
+h5 {
+	font-size: 1rem;
 }
+h6 {
+	font-size: 0.825rem;
+}
+h6.notice {
+	color: $primary-color;
+}
+select {
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+
+form {
+  input, select{
+    margin-bottom: 0.5rem;
+    @include breakpoint(small only){
+      margin-bottom: 0rem;
+    }
+  }
+	label {
+		font-size: 0.825rem;
+		&.required {
+			&:after {
+				content: ' *';
+				color: red;
+				font-weight: bold;
+			}
+		}
+		&.middle {
+			margin-bottom: 0;
+		}
+		&.medium-text-right {
+			padding-right: 0.5rem;
+		}
+	}
+	.cell.has-tip {
+		border-bottom: 0;
+	}
+	.cell.has-checkbox {
+		padding-top: 0.5rem;
+	}
+	button.gray {
+		background: $light-gray;
+		color: $dark-gray;
+		&:hover {
+			background: $medium-gray;
+			color: $black;
+		}
+	}
+}
+
 /**
  ** HEADER
  **/
@@ -49,7 +100,10 @@ header {
 		padding-top: 0.625rem;
 		font-size: 2rem;
 		font-weight: bold;
-		color: $primary-color;
+    color: $primary-color;
+    @include breakpoint(small only){
+      font-size: 1.3rem;
+    }
 	}
 	.menu {
 		padding: 0.5rem 0;
@@ -67,6 +121,7 @@ header {
  ** FOOTER
  **/
 footer {
+	margin-top: 1rem;
 	.top {
 		background: $primary-color;
 		.menu {
@@ -89,6 +144,9 @@ footer {
 			text-decoration: underline;
 		}
 	}
+}
+.page-body {
+	margin-top: 1rem;
 }
 .topbar-responsive {
 	background: $primary-color;
@@ -164,306 +222,355 @@ footer {
 	}
 }
 .grid-10 {
-  margin: 0.825rem -0.46875rem;
-  .cell {
-    @include xy-cell(1 of 10,true, 15px, margin, right left);
-    @include breakpoint(small only) {
-      @include xy-cell(1 of 5,true, 10px, margin, right left);
-    }
-  }
+	margin: 0.825rem -0.46875rem;
+	& > .cell {
+		@include xy-cell(1 of 10,true, 15px, margin, right left);
+		@include breakpoint(small only) {
+			@include xy-cell(1 of 5,true, 10px, margin, right left);
+		}
+	}
+}
+.grid-5 {
+	//margin: 0.825rem -0.46875rem;
+	& > .cell {
+		margin: 0.825rem -0.46875rem;
+		@include xy-cell(1 of 5,true, 15px, margin, right left);
+		@include breakpoint(small only) {
+			@include xy-cell(1 of 5,true, 10px, margin, right left);
+		}
+	}
 }
 #category-boxes {
-  .card {
-    border: 0;
-    border-radius: 3px;
-    .card-section {
-      background-color: rgba(255, 255, 255, 0.9);
-      $caption-height: 2.2rem;
-      margin-top: -$caption-height;
-      height: $caption-height;
-      padding: 0.3rem 0.25rem;
-      @include transition(all 0.2s);
-      p {
-        font-size: 0.625rem;
-        line-height: 0.825rem;
-      }
-    }
-    &:hover {
-      .card-section {
-        background-color: $primary-color;
-        color: $white;
-        $caption-height: 2.8rem;
-        margin-top: -$caption-height;
-        height: $caption-height;
-      }
-    }
-  }
-	
+	.card {
+		border: 0;
+		border-radius: 3px;
+		.card-section {
+			background-color: rgba(255, 255, 255, 0.9);
+			$caption-height: 2.2rem;
+			margin-top: -$caption-height;
+			height: $caption-height;
+			padding: 0.3rem 0.25rem;
+			@include transition(all 0.2s);
+			p {
+				font-size: 0.625rem;
+				line-height: 0.825rem;
+			}
+		}
+		&:hover {
+			.card-section {
+				background-color: $primary-color;
+				color: $white;
+				$caption-height: 2.8rem;
+				margin-top: -$caption-height;
+				height: $caption-height;
+			}
+		}
+	}
 }
 .box {
-  margin-bottom: 1rem;  
-  .title-bar {
-    
-    background: $secondary-color;
-    padding: 0;
-    font-weight: bold;
-    position: relative;
-    height:40px;
-    h2{
-      color: $white;
-      font-size: 1rem;
-      padding: 0 1rem;
-      line-height: 2rem;
-      font-weight:bold;
-      margin:0;
-    }
-    a{
-      color:$white;
-      margin-right:1rem;
-      font-size: 0.825rem;
-    }    
-  }
-  .mark-orange{
-    b{
-      padding: 0 0.3rem;
-    }
-    &:before{
-      content:'';
-      @include background('icon-title-arrow.svg', 20px, 40px);
-    }      
-  }
-  .box-container{
-    padding: 1rem;    
-    border: 1px solid $light-gray;  
-  }
-  .box-content{
-    padding-top: 1rem;    
-  } 
-  &.info{ 
-    margin-top: 1.5rem; 
-    .title-bar {
-      background: $light-gray;
-      h2{
-        text-transform: uppercase;
-        color: $black;
-      }
-      
-    }    
-  }  
-}
-.no-box {  
-  margin-left:-0.9375rem;
+	margin-bottom: 1rem;
+	.title-bar {
+		background: $secondary-color;
+		padding: 0;
+		font-weight: bold;
+		position: relative;
+		height: 40px;
+		h2 {
+			color: $white;
+			font-size: 1rem;
+			padding: 0 1rem;
+			line-height: 2rem;
+			font-weight: bold;
+			margin: 0;
+		}
+		a {
+			color: $white;
+			margin-right: 1rem;
+			font-size: 0.825rem;
+		}
+	}
+	.mark-orange {
+		b {
+			padding: 0 0.3rem;
+		}
+		&:before {
+			content: '';
+			@include background('icon-title-arrow.svg');
+			width: 20px;
+			height: 40px;
+		}
+	}
+	.box-container {
+		padding: 1rem;
+		border: 1px solid $light-gray;
+	}
+	.box-content {
+		padding-top: 1rem;
+	}
+	&.info {
+		margin-top: 0.5rem;
+		.title-bar {
+			background: $light-gray;
+			h2 {
+				text-transform: uppercase;
+				color: $black;
+			}
+		}
+	}
 }
 
-.item{
-  .thumbnail{
-    overflow: hidden;
-    border: none;
-    box-shadow: none;
-    margin-bottom:0.5rem;
-    @include breakpoint(small only) {
-      width: 100%;
-      img{
-        width: 100%;
-      }
-    }
-    &:hover{        
-      img{
-        @include transition(all 0.5s ease-in-out);
-        transform: scale(1.1);
-      }
-    }
-  }
-  .content{
-    h4{
-      font-size: 1rem;
-      font-weight: bold;
-      color: $black;
-      &:hover{
-        color: $primary-color;
-      }
-    }
-    p{
-      font-size: 0.825rem;
-    }
-    a.more{
-      font-size: 0.825rem;
-    }
-  }
+.item {
+	.thumbnail {
+		overflow: hidden;
+		border: none;
+		box-shadow: none;
+		margin-bottom: 0.5rem;
+		@include breakpoint(small only) {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+		&:hover {
+			img {
+				@include transition(all 0.5s ease-in-out);
+				transform: scale(1.1);
+			}
+		}
+	}
+	.content {
+		h4 {
+			font-size: 1rem;
+			font-weight: bold;
+			color: $black;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+		p {
+			font-size: 0.825rem;
+		}
+		a.more {
+			font-size: 0.825rem;
+		}
+	}
 }
 
-.news-list{
-  .item{        
-    @include background('icon-bullet.svg');
-    background-position: left 0.7rem;
-    border-bottom: 1px dotted $light-gray;        
-    padding: 0.3rem;
-    a{
-      font-size: 0.825rem;
-      line-height: 0.625rem;
-      color: $black;
-      padding-left: 0.8rem;
-      &:hover{
-        color:$primary-color;            
-      }
-    }
-  }
-  .cell:last-child{
-    .item{  
-      border-bottom: 0;  
-    }
-  }
+.news-list {
+	.item {
+		@include background('icon-bullet.svg');
+		background-position: left 0.7rem;
+		border-bottom: 1px dotted $light-gray;
+		padding: 0.3rem;
+		a {
+			font-size: 0.825rem;
+			line-height: 0.625rem;
+			color: $black;
+			padding-left: 0.8rem;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+	.cell:last-child {
+		.item {
+			border-bottom: 0;
+		}
+	}
 }
-.product{
-  .title{
-    h2{
-      color: $secondary-color;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }    
-  }
-  .item{
-    border-bottom: solid 1px $light-gray;
-    margin-bottom: 1.2rem;
-    h4{
-      &:hover{
-        color: $primary-color;
-      }
-    }
-    .price{
-      p{
-        font-size: 1.5rem;
-        line-height: 1.6rem;
-        font-weight: bold;
-        color: $primary-color;
-        @include breakpoint(small only) {
-          font-size: 1.2rem;
-          line-height: 1.2rem;
-        }
-      }
-    }
-    &:last-child{
-      border-bottom: 0;
-    }
-    
-  }  
-}
-
-#userpost{
-  .item{
-    .content{
-      h4{
-        font-size: 0.825rem;
-        &:hover{
-          color:$primary-color;
-        }
-      } 
-      @include breakpoint(medium up) {
-        margin-left:-0.9375rem;
-      }
-    }
-  }
-  
-      
-}
-#search{
-  .title-bar{
-    background: $tertiary-color;
-  }
-  .box-container{
-    border: 2px solid $tertiary-color;
-    border-top: 0;
-    padding-bottom: 0.25rem;
-    .input-group{
-      margin-bottom:0.4rem;
-      input, select{
-        margin:0 auto;
-        height: 2.1rem;
-        font-size: 0.825rem;
-      }
-      button{
-        font-weight: bold;
-        margin: auto;
-        border-radius: 4px;
-      }
-    }
-  }
-  
+.product {
+	.title {
+		h2 {
+			color: $secondary-color;
+			font-size: 1.2rem;
+			font-weight: bold;
+		}
+	}
+	.item {
+		border-bottom: solid 1px $light-gray;
+		margin-bottom: 1.2rem;
+		h4 {
+			&:hover {
+				color: $primary-color;
+			}
+		}
+		.price {
+			p {
+				font-size: 1.5rem;
+				line-height: 1.6rem;
+				font-weight: bold;
+				color: $primary-color;
+				@include breakpoint(small only) {
+					font-size: 1.2rem;
+					line-height: 1.2rem;
+				}
+			}
+		}
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
 }
 
-#area{
-  .item{        
-    @include background('icon-dot.svg');
-    background-position: left 0.8rem;     
-    padding: 0.3rem;
-    a{
-      font-size: 0.825rem;
-      line-height: 0.625rem;
-      color: $black;
-      padding: 0 .4rem;
-      &:hover{
-        color:$primary-color;            
-      }
-    }
-  }
+#userpost {
+	.item {
+		.content {
+			h4 {
+				font-size: 0.825rem;
+				&:hover {
+					color: $primary-color;
+				}
+			}
+			@include breakpoint(medium up) {
+				margin-left: -0.9375rem;
+			}
+		}
+	}
 }
-#ads{
-  .item{
-    margin-bottom:1rem;
-  }
+#search {
+	.title-bar {
+		background: $tertiary-color;
+	}
+	.box-container {
+		border: 2px solid $tertiary-color;
+		border-top: 0;
+		padding-bottom: 0.25rem;
+		.input-group {
+			margin-bottom: 0.4rem;
+			input,
+			select {
+				margin: 0 auto;
+				height: 2.1rem;
+				font-size: 0.825rem;
+			}
+			button {
+				font-weight: bold;
+				margin: auto;
+				border-radius: 4px;
+			}
+		}
+	}
 }
-#breadcrumbs{
-  margin-top:0.8rem;
+
+#area {
+	.item {
+		@include background('icon-dot.svg');
+		background-position: left 0.8rem;
+		padding: 0.3rem;
+		a {
+			font-size: 0.825rem;
+			line-height: 0.625rem;
+			color: $black;
+			padding: 0 .4rem;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
 }
-.product{
-  .title{    
-    margin-bottom:1rem;
-  }
-  nav{
-    margin:auto;
-  }
-  .info{
-    table{
-      thead{
-      background:$light-gray;
-      }
-      tr{
-        height: 2rem;
-      }
-      td{
-        font-size: 0.825rem;
-        &.key{
-          font-weight: bold;
-          text-align: right;
-        }
-        &.value{
-          color: $dark-gray;
-          text-align: left;
-          i{
-            color: $primary-color;
-          }
-        }
-        &.price{
-          color:$primary-color;
-          font-size: 1.2rem;
-          font-weight: bold;
-        }
-      }
-    }
-    &.contact{
-      .badge{
-        font-size: 1.8rem;
-        border-radius: 6px;
-        padding: 0.4em 0.3em;
-      }
-      p{
-        margin-bottom: 0;
-      }
-    }
-  }  
-  .alert{
-    h5{
-      font-weight: bold;
-    }
-  }
+#ads {
+	.item {
+		margin-bottom: 1rem;
+	}
+}
+#breadcrumbs {
+	margin-top: 0.8rem;
+}
+.product {
+	.title {
+		margin-bottom: 1rem;
+	}
+	nav {
+		margin: auto;
+	}
+	.info {
+		table {
+			thead {
+				background: $light-gray;
+			}
+			tr {
+				height: 2rem;
+			}
+			td {
+				font-size: 0.825rem;
+				&.key {
+					font-weight: bold;
+					text-align: right;
+				}
+				&.value {
+					color: $dark-gray;
+					text-align: left;
+					i {
+						color: $primary-color;
+					}
+				}
+				&.price {
+					color: $primary-color;
+					font-size: 1.2rem;
+					font-weight: bold;
+				}
+			}
+		}
+		&.contact {
+			.badge {
+				font-size: 1.8rem;
+				border-radius: 6px;
+				padding: 0.4em 0.3em;
+			}
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.alert {
+		h5 {
+			font-weight: bold;
+		}
+	}
+}
+#post {
+	#map {
+		background: $light-gray;
+		height: 425px;
+		width: 100%;
+	}
+	.upload {
+		.button {
+			background: $light-gray;
+			color: $dark-gray;
+			width: 100%;
+			&:hover {
+				background: $primary-color;
+				color: $white;
+			}
+			&.remove {
+				color: $alert-color;
+				background: $white;
+				border: 1px solid $light-gray;
+				margin-left: -0.625rem;
+				width: 2.1rem;
+			}
+		}
+		.thumbnail {
+			@include background('placeholder-upload.png');
+			width: 100%;
+			min-height: 131px;
+			background-position: center center;
+			background-size: 100%;
+			@include breakpoint(small only) {
+				min-height: 67px;
+			}
+		}
+	}
+	.item {
+		@include background('icon-bullet.svg');
+		background-position: left 0.7rem;
+		padding: 0.3rem;
+		span {
+			font-size: 0.825rem;
+			line-height: 0.625rem;
+			color: $black;
+			padding-left: 0.8rem;
+		}
+	}
 }

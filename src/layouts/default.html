@@ -16,11 +16,11 @@
 {{#ifpage 'index'}}
   {{> categoryboxes}}
 {{/ifpage}}
-{{#ifpage 'list' 'detail'}}
+{{#unlesspage 'index'}}
   {{> breadcrumbs}}
-{{/ifpage}}
+{{/unlesspage}}
 
-<div class="grid-container">
+<div class="grid-container page-body">
   <div class="grid-x grid-margin-x">
     <div class="medium-9 cell">
       {{> body}}
@@ -30,7 +30,6 @@
     </div>
   </div>
 </div>
-  
 
 
 {{#ifpage 'index'}}

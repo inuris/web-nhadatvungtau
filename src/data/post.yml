@@ -1,0 +1,29 @@
+loaitin:
+  - Cần bán
+  - Cho thuê
+loaibds:
+  - Chung cư
+  - Mặt bằng
+tinhtp:
+  - BRVT
+  - HCM
+quanhuyen:
+  - Vũng Tàu
+  - Bà Rịa
+phuongxa:
+  - Phường 1
+  - Phường 2
+duan:
+  - Hodeco
+  - Novaland
+dientich:
+  - tổng diện tích
+  - trên m2
+huong:
+  - Đông
+  - Tây
+  - Nam
+  - Bắc
+phaply:
+  - Sổ hồng
+  - Giấy phép
