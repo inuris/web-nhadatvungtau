@@ -33,7 +33,7 @@
     </div>
     <div class="news-list cell small-12 news">
       <div class="grid-x">
-        {{#each news}}
+        {{#each news.main}}
         <div class="cell">
           <div class="item">
             <a href="detail.html">{{this}}</a>
@@ -54,7 +54,7 @@
     </div>
   </div>
   <div class="box-container grid-x">
-    {{#each feature}}
+    {{#each news.featured}}
     <div class="cell item">
       <div class="grid-x grid-margin-x">
         <div class="cell medium-3 text-center">

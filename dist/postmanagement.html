@@ -25,7 +25,7 @@
                         <ul class="menu simple align-right small-align-center">
                             <li><a href="postnew.html">Đăng tin miễn phí</a></li>
                             <li><a href="#">Đăng ký thành viên</a></li>
-                            <li><a href="#">Đăng nhập</a></li>
+                            <li><a href="postmanagement.html">Đăng nhập</a></li>
                         </ul>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                   <ul class="breadcrumbs">
                       <li><a href="#">Trang chủ</a></li>
                       <li>
-                      <span class="show-for-sr">Current: </span>
+                      <span class="show-for-sr">Current: </span>TIN ĐÃ DUYỆT
                       </li>
                   </ul>
               </nav>
@@ -79,14 +79,67 @@
 <div class="grid-container page-body">
   <div class="grid-x grid-margin-x">
     <div class="medium-9 cell">
+      <div id="post" class="no-box form">
+          <form>
+              <div class="grid-x grid-margin-x">
+                  <div class="cell">
+                      <div class="title">
+                          <h1>TIN ĐÃ DUYỆT</h1>
+                      </div>
+                  </div>
+                  <!-- Lọc -->
+                  <div class="cell">
+                      <div class="box info">
+                          <div class="box-content">
+                              <div class="grid-x">
+                                  <div class="cell">
+                                      <div class="grid-x grid-margin-x">
+                                          <div class="medium-2 cell">
+                                              <label for="tieude" class="text-left middle required">Tiêu đề</label>
+                                          </div>
+                                          <div class="medium-10 cell">
+                                              <input type="text" id="tieude">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="cell">
+                                      <h6 class="notice">Lưu ý: Thành viên vui lòng xóa các tin đã giao dịch để tránh bị KH phản ánh dẫn đến việc tài khoản bị khóa.</h6>
+                                  </div>
+                                  <div class="cell">
+                                      <table>
+                                          <thead>
+                                              <tr>
+                                                  <th>STT</th>
+                                                  <th>Mã Tin</th>
+                                                  <th>Loại Tin</th>
+                                                  <th>Tiêu Đề</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td class="key">Ngày đăng</td>
+                                                  <td class="value">Hôm nay</td>
+                                              </tr>                                        
+                                          </tbody>
+                                      </table>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End Lọc -->
       
+      
+              </div>
+          </form>
+      </div>
     </div>
     <div class="auto cell">
       
       
       
-      <!-- News Market -->
-      <div id="post-list" class="box">
+      <!-- Post Links -->
+      <div id="post-links" class="box">
           <div class="title-bar">
               <h2>Quản lý tin đăng</h2>
           </div>
@@ -94,29 +147,60 @@
               <div class="grid-x news-list">
                   <div class="cell">
                       <div class="item">
-                          <a href="#">Hà Nội sẽ có thêm khu đô thị 22,8ha vào năm 2019</a>
+                          <a href="#">Tin đã duyệt&nbsp;<small>(32)</small></a>
                       </div>
                   </div>
                   <div class="cell">
                       <div class="item">
-                          <a href="#">Chúng ta chưa có nhiều người xứng đáng ở biệt thự</a>
+                          <a href="#">Tin chờ duyệt&nbsp;<small>(2)</small></a>
                       </div>
                   </div>
                   <div class="cell">
                       <div class="item">
-                          <a href="#">Những nữ tướng khiến phái mạnh phải kính nể của ngành BĐS</a>
+                          <a href="#">Tin không được duyệt&nbsp;<small>(3)</small></a>
                       </div>
                   </div>
                   <div class="cell">
                       <div class="item">
-                          <a href="#">Hà Nội nói gì về dự án 90 tỷ làm hầm xuyên đê?</a>
+                          <a href="#">Tin tạm dừng đăng&nbsp;<small>(43)</small></a>
+                      </div>
+                  </div>
+                  <div class="cell">
+                      <div class="item">
+                          <a href="#">Tin hết hạn&nbsp;<small>(56)</small></a>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-      <!-- End News Market -->
+      <!-- End Post Links -->
       
+      <!-- Account Links -->
+      <div id="account-links" class="box">
+          <div class="title-bar">
+              <h2>Tài khoản cá nhân</h2>
+          </div>
+          <div class="box-container">
+              <div class="grid-x news-list">
+                  <div class="cell">
+                      <div class="item">
+                          <a href="#">Thông tin tài khoản</a>
+                      </div>
+                  </div>
+                  <div class="cell">
+                      <div class="item">
+                          <a href="#">Thay đổi mật khẩu</a>
+                      </div>
+                  </div>
+                  <div class="cell">
+                      <div class="item">
+                          <a href="#">Thông báo</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- End Account Links -->
       
       <!-- Ads -->
       <div id="ads" class="box">

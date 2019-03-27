@@ -371,6 +371,9 @@ footer {
 			&:hover {
 				color: $primary-color;
 			}
+			small{
+				color: $medium-gray;
+			}
 		}
 	}
 	.cell:last-child {

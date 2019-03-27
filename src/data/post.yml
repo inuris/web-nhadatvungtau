@@ -10,6 +10,12 @@ tinhtp:
 quanhuyen:
   - Vũng Tàu
   - Bà Rịa
+  - Phú Mỹ
+  - Châu Đức
+  - Côn Đảo
+  - Đất Đỏ
+  - Long Điền
+  - Xuyên Mộc
 phuongxa:
   - Phường 1
   - Phường 2
@@ -27,3 +33,17 @@ huong:
 phaply:
   - Sổ hồng
   - Giấy phép
+gia:
+  - '< 500 triệu'
+  - '500 triệu - 1 tỷ'
+  - '1 tỷ - 2 tỳ'
+tongdientich:
+  - '< 50m2'
+  - '50m2 - 100m2'
+  - '100m2 - 200m2'
+  - '200m2+'
+rule:
+  - Tin thường có chữ màu xanh, nằm dưới tin VIP.
+  - Bị trôi trang nhanh do có nhiều tin đăng trong ngày.
+  - Chờ kiểm duyệt trước khi được hiển thị, thời gian chờ duyệt từ 5 phút đến vài tiếng tùy thuộc vào số lượng tin đăng trong ngày.
+  - Thời gian hiển thị 90 ngày.

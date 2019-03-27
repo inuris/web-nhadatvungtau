@@ -1,0 +1,50 @@
+guide:
+  - Nội dung là tiếng việt có dấu, thể hiện được các đặc điểm của tài sản.
+  - Người dùng sẽ quan tâm hơn nếu tài sản có mức giá và diện tích. Hạn chế chọn mức giá thỏa thuận và diện tích không xác định.
+  - Nên điền địa chỉ cụ thể của tài sản để tạo sự tin tưởng cho người đọc về sự hiện hữu của tài sản.
+  - Nên điền đầy đủ các thông tin theo yêu cầu và có ảnh đính kèm để người đọc có thể hình dung ra được tài sản của bạn.
+rules:
+  - Đăng lại cũ.
+  - Một dự án nhưng đăng nhiều tin.
+  - Nội dung không có dấu.
+  - Nội dung mô tả không chi tiết.
+  - Cỡ chữ quá lớn, mất thẩm mỹ.
+  - 'Nội dung chứa tag từ khóa (vd: can ho, căn hộ him lam, can ho ban, ..).'
+  - Nội dung chứa đường dẫn đến website khác.
+  - Đăng sai loại bất động sản.
+  - Mức giá không đúng (mức giá phải đúng với thực tế bán).
+  - Hình ảnh không đúng với nội dung (Phải đăng ảnh thật của tài sản hoặc không sử dụng ảnh).
+  - Chọn sai dự án.
+  - Tên liên không hợp lệ (Tên liên hệ phải là tên cá nhân hoặc doanh nghiệp).
+  - Tên liên hệ trong nội dung tin đăng không giống với tên liên hệ trong ô người liên hệ.
+  - Số điện thoại không hợp lệ.
+  - Số điện thoại trong nội dung tin đăng không giống với số điện thoại trong ô liên hệ.
+  - Địa chỉ không đúng (Địa chỉ phải có tên đường hoặc có tên phường, xã).
+postlinks:
+  - {
+      name: Tin đã duyệt, 
+      count: 32
+    }
+  - {
+      name: Tin chờ duyệt, 
+      count: 2
+    }
+  - {
+      name: Tin không được duyệt, 
+      count: 3
+    }
+  - {
+      name: Tin tạm dừng đăng, 
+      count: 43
+    }
+  - {
+      name: Tin hết hạn, 
+      count: 56
+    }
+accountlinks:
+  - Thông tin tài khoản
+  - Thay đổi mật khẩu
+  - Thông báo
+ads:
+  - ads-1.jpg
+  - ads-2.jpg
