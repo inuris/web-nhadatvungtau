@@ -96,19 +96,60 @@
 
 {{/ifpage}}
 
-{{#ifpage 'post'}}
+{{#ifpage 'postnew'}}
 
 <!-- Rule -->
 <div id="rule" class="box">
     <div class="title-bar">
-        <h2>Tin của bạn sẽ không được duyệt hoặc bị xóa nếu</h2>
+        <h2>Tin của bạn sẽ không được duyệt hoặc bị xóa nếu vi phạm các điều sau</h2>
     </div>
     <div class="box-container">
         <div class="grid-x rule-list">
-            {{#each post-rule-sidebar}}
+            {{#each sidebar-rules}}
             <div class="cell">
                 <div class="item">
                     <span>{{this}}</span>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+<!-- End Rule -->
+
+<!-- Guide -->
+<div id="guide" class="box">
+    <div class="title-bar">
+        <h2>Cách đăng tin hiệu quả</h2>
+    </div>
+    <div class="box-container">
+        <div class="grid-x rule-list">
+            {{#each sidebar-guide}}
+            <div class="cell">
+                <div class="item">
+                    <span>{{this}}</span>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+<!-- End Guide -->
+{{/ifpage}}
+
+{{#ifpage 'postmanagement'}}
+
+<!-- News Market -->
+<div id="post-list" class="box">
+    <div class="title-bar">
+        <h2>Quản lý tin đăng</h2>
+    </div>
+    <div class="box-container">
+        <div class="grid-x news-list">
+            {{#each news}}
+            <div class="cell">
+                <div class="item">
+                    <a href="#">{{this}}</a>
                 </div>
             </div>
             {{/each}}
