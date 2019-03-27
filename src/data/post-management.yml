@@ -1,0 +1,120 @@
+- {
+  no: 1,
+  code: 1613496,
+  img: 'item-1.png',
+  maintype: 'Cần bán',
+  subtype: 'Nhà hàng, khách sạn',
+  description: 'Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu',
+  date-post: '08:24 09/03/2019',
+  date-expire: '08:24 07/06/2019',
+  date-update: '08:24 07/06/2019',
+  date-pin: '08:24 07/06/2019'
+}
+- {
+  no: 2,
+  code: 1434146,
+  img: 'item-2.png',
+  maintype: 'Cần bán',
+  subtype: 'Nhà hàng, khách sạn',
+  description: 'Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu',
+  date-post: '08:24 09/03/2019',
+  date-expire: '08:24 07/06/2019',
+  date-update: '08:24 07/06/2019',
+  date-pin: '08:24 07/06/2019'
+}
+- {
+  no: 3,
+  code: 12313496,
+  img: 'item-3.png',
+  maintype: 'Cần bán',
+  subtype: 'Nhà hàng, khách sạn',
+  description: 'Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu',
+  date-post: '08:24 09/03/2019',
+  date-expire: '08:24 07/06/2019',
+  date-update: '08:24 07/06/2019',
+  date-pin: '08:24 07/06/2019'
+}
+- {
+  no: 4,
+  code: 21413496,
+  img: 'item-4.png',
+  maintype: 'Cần bán',
+  subtype: 'Nhà hàng, khách sạn',
+  description: 'Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu',
+  date-post: '08:24 09/03/2019',
+  date-expire: '08:24 07/06/2019',
+  date-update: '08:24 07/06/2019',
+  date-pin: '08:24 07/06/2019'
+}
+- {
+  no: 5,
+  code: 23123,
+  img: 'item-5.png',
+  maintype: 'Cần bán',
+  subtype: 'Nhà hàng, khách sạn',
+  description: 'Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu',
+  date-post: '08:24 09/03/2019',
+  date-expire: '08:24 07/06/2019',
+  date-update: '08:24 07/06/2019',
+  date-pin: '08:24 07/06/2019'
+}
+- {
+  no: 6,
+  code: 1613496,
+  img: 'item-1.png',
+  maintype: 'Cần bán',
+  subtype: 'Nhà hàng, khách sạn',
+  description: 'Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu',
+  date-post: '08:24 09/03/2019',
+  date-expire: '08:24 07/06/2019',
+  date-update: '08:24 07/06/2019',
+  date-pin: '08:24 07/06/2019'
+}
+- {
+  no: 7,
+  code: 1434146,
+  img: 'item-2.png',
+  maintype: 'Cần bán',
+  subtype: 'Nhà hàng, khách sạn',
+  description: 'Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu',
+  date-post: '08:24 09/03/2019',
+  date-expire: '08:24 07/06/2019',
+  date-update: '08:24 07/06/2019',
+  date-pin: '08:24 07/06/2019'
+}
+- {
+  no: 8,
+  code: 12313496,
+  img: 'item-3.png',
+  maintype: 'Cần bán',
+  subtype: 'Nhà hàng, khách sạn',
+  description: 'Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu',
+  date-post: '08:24 09/03/2019',
+  date-expire: '08:24 07/06/2019',
+  date-update: '08:24 07/06/2019',
+  date-pin: '08:24 07/06/2019'
+}
+- {
+  no: 9,
+  code: 21413496,
+  img: 'item-4.png',
+  maintype: 'Cần bán',
+  subtype: 'Nhà hàng, khách sạn',
+  description: 'Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu',
+  date-post: '08:24 09/03/2019',
+  date-expire: '08:24 07/06/2019',
+  date-update: '08:24 07/06/2019',
+  date-pin: '08:24 07/06/2019'
+}
+- {
+  no: 10,
+  code: 23123,
+  img: 'item-5.png',
+  maintype: 'Cần bán',
+  subtype: 'Nhà hàng, khách sạn',
+  description: 'Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu',
+  date-post: '08:24 09/03/2019',
+  date-expire: '08:24 07/06/2019',
+  date-update: '08:24 07/06/2019',
+  date-pin: '08:24 07/06/2019'
+}

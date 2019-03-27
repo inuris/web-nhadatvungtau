@@ -1,7 +1,7 @@
 ---
 title: TIN ĐÃ DUYỆT
 ---
-<div id="post" class="no-box form">
+<div id="post-management" class="no-box form post-management">
     <form>
         <div class="grid-x grid-margin-x">
             <div class="cell">
@@ -16,11 +16,33 @@ title: TIN ĐÃ DUYỆT
                         <div class="grid-x">
                             <div class="cell">
                                 <div class="grid-x grid-margin-x">
-                                    <div class="medium-2 cell">
-                                        <label for="tieude" class="text-left middle required">Tiêu đề</label>
+                                    <div class="medium-3 cell">
+                                        <input type="text" id="matin" placeholder="Mã tin">
                                     </div>
-                                    <div class="medium-10 cell">
-                                        <input type="text" id="tieude">
+                                    <div class="medium-2 cell">
+                                        <select>
+                                            <option>Loại tin</option>
+                                            {{#each post.loaitin}}<option>{{this}}</option>{{/each}}
+                                        </select>
+                                    </div>
+                                    <div class="medium-2 cell">
+                                        <select>
+                                            <option>Loại BĐS</option>
+                                            {{#each post.loaibds}}<option>{{this}}</option>{{/each}}
+                                        </select>
+                                    </div>
+                                    <div class="medium-2 cell">
+                                        <input type="text" id="date-from" class="date-input" placeholder="Từ">
+                                    </div>
+                                    <div class="medium-2 cell">
+                                        <input type="text" id="date-to" class="date-input" placeholder="Đến">
+                                    </div>
+                                    <div class="medium-1 cell">
+                                        <div class="text-center">
+                                            <button type="submit" class="button small">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -31,21 +53,91 @@ title: TIN ĐÃ DUYỆT
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>STT</th>
-                                            <th>Mã Tin</th>
-                                            <th>Loại Tin</th>
-                                            <th>Tiêu Đề</th>
+                                            <th width="3%" class="text-center">STT</th>
+                                            <th width="12%" class="text-center">Mã Tin</th>
+                                            <th width="12%" class="text-center">Loại Tin</th>
+                                            <th class="text-center">Tiêu Đề</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        {{#each post-management}}
                                         <tr>
-                                            <td class="key">Ngày đăng</td>
-                                            <td class="value">Hôm nay</td>
-                                        </tr>                                        
+                                            <td>
+                                                <div class="text-center">
+                                                    {{this.no}}
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-center">
+                                                    <a href="detail.html" class="black"><strong>{{this.code}}</strong></a>
+                                                </div>
+                                                <div class="thumbnail">
+                                                    <a href="detail.html"><img src="{{root}}assets/img/{{this.img}}"></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-center">
+                                                    <strong class="primary-color">{{this.maintype}}</strong>
+                                                </div>
+                                                <div class="text-center">
+                                                    {{this.subtype}}
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="border-dotted padding">
+                                                    <strong>{{this.description}}</strong>
+                                                </div>
+                                                <div class="border-dotted padding">
+                                                    <span class="gray">Ngày đăng: </span>{{this.date-post}} | <span class="gray">Hết hạn: </span>{{this.date-expire}} | <span class="gray">Cập nhật: </span>{{this.date-update}}
+                                                    <span class="gray">Ngày Up miễn phí gần đây: </span>{{this.date-pin}}
+                                                </div>
+                                                <div class="grid-x grid-margin-x padding">
+                                                    <div class="cell small-6">
+                                                        <div class="grid-x">
+                                                                <div class="cell small-4">
+                                                                    <a class="secondary-color" href="#">Sửa</a>
+                                                                </div>
+                                                                <div class="cell small-4">
+                                                                    <a class="alert-color"  href="#">Xóa</a>
+                                                                </div>
+                                                                <div class="cell small-4">
+                                                                    <a class="secondary-color" href="#">Tạm dừng</a>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell small-6">
+                                                        <div class="grid-x">
+                                                            <div class="cell small-4">
+                                                                    <a class="success-color"  href="#">Up miễn phí</a>
+                                                                </div>
+                                                                <div class="cell small-offset-3 small-5">
+                                                                    <a class="primary-color" href="#">Nâng cấp VIP</a>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                        
+                                                        
+                                                </div>
+                                            </td>
+                                        </tr>   
+                                        {{/each}}                                     
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+                        <nav aria-label="Pagination">
+                                <ul class="pagination text-center">
+                                    <li class="pagination-previous disabled">Trước</li>
+                                    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                                    <li><a href="#" aria-label="Page 2">2</a></li>
+                                    <li><a href="#" aria-label="Page 3">3</a></li>
+                                    <li><a href="#" aria-label="Page 4">4</a></li>
+                                    <li class="ellipsis"></li>
+                                    <li><a href="#" aria-label="Page 12">12</a></li>
+                                    <li><a href="#" aria-label="Page 13">13</a></li>
+                                    <li class="pagination-next"><a href="#" aria-label="Next page">Sau</a></li>
+                                </ul>
+                            </nav>
                     </div>
                 </div>
             </div>

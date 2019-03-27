@@ -8,10 +8,15 @@ import 'what-input';
 // have the hoisting behavior.
 window.jQuery = $;
 require('foundation-sites');
-
+require('foundation-datepicker');
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 
 
 $(document).foundation();
+
+$('.date-input').fdatepicker({
+    format: 'dd-mm-yyyy',
+    disableDblClickSelection: true
+  });

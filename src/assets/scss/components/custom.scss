@@ -546,7 +546,7 @@ footer {
 		}
 	}
 }
-#post {
+.post {
 	#map {
 		background: $light-gray;
 		height: 425px;
@@ -581,4 +581,48 @@ footer {
 		}
 	}
 	
+}
+.post-management{
+	table{
+		th{
+			background: $secondary-color;
+			color: $white;
+		}
+		td{
+			font-size: 0.825rem;
+			border-right: 1px solid $light-gray;
+			.black{
+				color: $black;
+			}
+			.gray{
+				color: $dark-gray;
+			}
+			.primary-color{
+				color: $primary-color;
+			}
+			.secondary-color{
+				color: $secondary-color;
+			}
+			.alert-color{
+				color: $alert-color;
+			}
+			.success-color{
+				color: $success-color;
+			}
+			.padding{
+				padding-bottom: 0.4rem;
+				padding-top: 0.4rem;
+			}
+			.border-dotted{				
+				border-bottom: 1px dotted $light-gray;
+			}
+			.thumbnail{
+				display:block;
+				max-width: 50px;
+				border:0;
+				box-shadow: 0;
+				margin: auto;
+			}
+		}		
+	}
 }
