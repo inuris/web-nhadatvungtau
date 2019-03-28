@@ -6,12 +6,12 @@ title: Bất Động Sản Nổi Bật
         <div class="title">
             <h1>{{title}}</h1>
         </div>        
-        {{#each feature}}
+        {{#each news.featured}}
         <div class="cell item">
             <div class="grid-x grid-margin-x">
                 <div class="cell medium-3 text-center">
                     <div class="thumbnail">
-                        <a href="detail.html"><img src="{{root}}assets/img/item-1.png"></a>
+                        <a href="detail.html"><img src="{{root}}assets/img/{{this.image}}"></a>
                     </div>
                     <a href="detail.html" class="button small">Chi tiết</a>
                 </div>
@@ -31,18 +31,9 @@ title: Bất Động Sản Nổi Bật
             </div>
         </div>
         {{/each}}
-        <nav aria-label="Pagination">
-            <ul class="pagination text-center">
-                <li class="pagination-previous disabled">Trước</li>
-                <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-                <li><a href="#" aria-label="Page 2">2</a></li>
-                <li><a href="#" aria-label="Page 3">3</a></li>
-                <li><a href="#" aria-label="Page 4">4</a></li>
-                <li class="ellipsis"></li>
-                <li><a href="#" aria-label="Page 12">12</a></li>
-                <li><a href="#" aria-label="Page 13">13</a></li>
-                <li class="pagination-next"><a href="#" aria-label="Next page">Sau</a></li>
-            </ul>
-        </nav>
+        <div class="cell">
+            {{> pagination}}
+        </div>
+        
     </div>
 </div>

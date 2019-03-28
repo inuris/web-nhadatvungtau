@@ -96,8 +96,8 @@ title: VV37 - Biệt Thự Hồ Bơi, View Biển Cho Thuê Dài Hạn
         </div>
         <div class="cell">
             <div class="box info">
-                <div class="title-bar">
-                    <h2>Thông tin cơ bản</h2>
+                <div class="title-bar gray">
+                    <h2>Thông tin Mô tả</h2>
                 </div>
                 <div class="box-content">
                     <p>Cho Thuê Biệt thự Villa view biển tại khu Biệt thự Đồi Sứ, Bãi trước Vũng Tàu, tọa lạc tại vị trí
@@ -133,7 +133,7 @@ title: VV37 - Biệt Thự Hồ Bơi, View Biển Cho Thuê Dài Hạn
         </div>
         <div class="cell">
                 <div class="box info contact">
-                    <div class="title-bar">
+                    <div class="title-bar gray">
                         <h2>Thông tin liên hệ</h2>
                     </div>
                     <div class="box-container"> 
@@ -181,37 +181,36 @@ title: VV37 - Biệt Thự Hồ Bơi, View Biển Cho Thuê Dài Hạn
                 <p>Mọi thông tin liên quan tới tin rao này là do người đăng tin đăng tải và chịu trách nhiệm. Chúng tôi luôn cố gắng để có chất lượng thông tin tốt nhất, nhưng chúng tôi không đảm bảo và không chịu trách nhiệm về bất kỳ nội dung nào liên quan tới tin rao này. Nếu quý vị phát hiện có sai sót hay vấn đề gì xin hãy thông báo cho chúng tôi.</p>
             </div>
         </div>
-    </div>
-</div>
-<div id="related" class="no-box product">
-        <div class="grid-x">
+        <div class="cell">
             <div class="title">
                 <h2>Tin Tương Tự</h2>
-            </div>        
-            {{#each news.related}}
-            <div class="cell item">
-                <div class="grid-x grid-margin-x">
-                    <div class="cell medium-3 text-center">
-                        <div class="thumbnail">
-                            <a href="detail.html"><img src="{{root}}assets/img/item-1.png"></a>
-                        </div>
-                        <a href="detail.html" class="button small">Chi tiết</a>
+            </div> 
+        </div>       
+        {{#each news.featured}}
+        <div class="cell item">
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-3 text-center">
+                    <div class="thumbnail">
+                        <a href="detail.html"><img src="{{root}}assets/img/{{this.image}}"></a>
                     </div>
-                    <div class="cell medium-7 small-9">
-                        <div class="content">
-                            <a href="detail.html">
-                                <h4>{{this.title}}</h4>
-                            </a>
-                            <p>{{this.description}}</p>
-                        </div>
+                    <a href="detail.html" class="button small">Chi tiết</a>
+                </div>
+                <div class="cell medium-7 small-9">
+                    <div class="content">
+                        <a href="detail.html">
+                            <h4>{{this.title}}</h4>
+                        </a>
+                        <p>{{this.description}}</p>
                     </div>
-                    <div class="cell medium-2 small-3">
-                        <div class="price">
-                            <p class="text-right">{{this.price}}</p>
-                        </div>
+                </div>
+                <div class="cell medium-2 small-3">
+                    <div class="price">
+                        <p class="text-right">{{this.price}}</p>
                     </div>
                 </div>
             </div>
-            {{/each}}
         </div>
+        {{/each}}
+        
     </div>
+</div>

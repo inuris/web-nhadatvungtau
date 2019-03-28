@@ -1,0 +1,76 @@
+---
+title: THÔNG TIN TÀI KHOẢN
+---
+<div id="post" class="no-box form post">
+    <form>
+        <div class="grid-x grid-margin-x">
+            <div class="cell">
+                <div class="title">
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+            <!-- Thông tin tài khoản -->
+            <div class="cell">
+                <div class="box info">
+                    <div class="title-bar">
+                        <h2>Thông tin tài khoản</h2>
+                    </div>
+                    <div class="box-content">
+                        <div class="grid-x">
+                            {{#each account.info}}
+                            <div class="cell">
+                                <div class="grid-x grid-margin-x">
+                                    <div class="medium-3 medium-offset-3 cell medium-text-right">
+                                        <label for="{{this.id}}" class="middle">{{this.key}}</label>
+                                    </div>
+                                    <div class="medium-3 cell">
+                                        <input type="text" id="{{this.id}}" value="{{this.value}}">
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Thông tin tài khoản -->
+
+            <!-- Thông tin liên hệ -->
+            <div class="cell">
+                <div class="box info">
+                    <div class="title-bar">
+                        <h2>Thông tin liên hệ</h2>
+                    </div>
+                    <div class="box-content">
+                        <div class="grid-x">
+                            {{#each account.contact}}
+                            <div class="cell">
+                                <div class="grid-x grid-margin-x">
+                                    <div class="medium-3 medium-offset-3 cell medium-text-right">
+                                        <label for="{{this.id}}" class="middle">{{this.key}}</label>
+                                    </div>
+                                    <div class="medium-3 cell">
+                                        <input type="text" id="{{this.id}}" value="{{this.value}}">
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Thông tin liên hệ -->
+
+            <!-- SUBMIT -->
+            <div class="cell">
+                <div class="text-center">
+                    <input type="submit" class="button" value="Cập nhật">
+                    <button class="button gray">Quay lại</button>
+                </div>
+            </div>
+            <!-- End SUBMIT -->
+        </div>
+    </form>
+</div>

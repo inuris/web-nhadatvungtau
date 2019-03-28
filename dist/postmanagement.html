@@ -24,7 +24,7 @@
                     <div class="cell small-12">
                         <ul class="menu simple align-right small-align-center">
                             <li><a href="postnew.html">Đăng tin miễn phí</a></li>
-                            <li><a href="#">Đăng ký thành viên</a></li>
+                            <li><a href="account.html">Đăng ký thành viên</a></li>
                             <li><a href="postmanagement.html">Đăng nhập</a></li>
                         </ul>
                     </div>
@@ -87,53 +87,57 @@
                           <h1>TIN ĐÃ DUYỆT</h1>
                       </div>
                   </div>
-                  <!-- Lọc -->
+      
                   <div class="cell">
                       <div class="box info">
                           <div class="box-content">
                               <div class="grid-x">
+                                  <!-- Filter -->
                                   <div class="cell">
-                                      <div class="grid-x grid-margin-x">
+                                      <div class="grid-x grid-margin-x grid-margin-y">
                                           <div class="medium-3 cell">
                                               <input type="text" id="matin" placeholder="Mã tin">
                                           </div>
-                                          <div class="medium-2 cell">
+                                          <div class="medium-2 small-6 cell">
                                               <select>
                                                   <option>Loại tin</option>
                                                   <option>Cần bán</option><option>Cho thuê</option>
                                               </select>
                                           </div>
-                                          <div class="medium-2 cell">
+                                          <div class="medium-2 small-6 cell">
                                               <select>
                                                   <option>Loại BĐS</option>
                                                   <option>Chung cư</option><option>Mặt bằng</option>
                                               </select>
                                           </div>
-                                          <div class="medium-2 cell">
+                                          <div class="medium-2 small-6 cell">
                                               <input type="text" id="date-from" class="date-input" placeholder="Từ">
                                           </div>
-                                          <div class="medium-2 cell">
+                                          <div class="medium-2 small-6 cell">
                                               <input type="text" id="date-to" class="date-input" placeholder="Đến">
                                           </div>
-                                          <div class="medium-1 cell">
-                                              <div class="text-center">
-                                                  <button type="submit" class="button small">
-                                                      <i class="fa fa-search"></i>
-                                                  </button>
-                                              </div>
+                                          <div class="medium-1 cell text-center">
+                                              <button type="submit" class="button small small-only-expanded">
+                                                  <i class="fa fa-search"></i>
+                                              </button>
                                           </div>
                                       </div>
                                   </div>
+                                  <!-- End Filter -->
+      
                                   <div class="cell">
-                                      <h6 class="notice">Lưu ý: Thành viên vui lòng xóa các tin đã giao dịch để tránh bị KH phản ánh dẫn đến việc tài khoản bị khóa.</h6>
+                                      <h6 class="notice">Lưu ý: Thành viên vui lòng xóa các tin đã giao dịch để tránh bị KH
+                                          phản ánh dẫn đến việc tài khoản bị khóa.</h6>
                                   </div>
+      
+                                  <!-- Table -->
                                   <div class="cell">
-                                      <table>
+                                      <table class="stack">
                                           <thead>
                                               <tr>
-                                                  <th width="3%" class="text-center">STT</th>
-                                                  <th width="12%" class="text-center">Mã Tin</th>
-                                                  <th width="12%" class="text-center">Loại Tin</th>
+                                                  <th class="text-center">STT</th>
+                                                  <th class="text-center">Mã Tin</th>
+                                                  <th class="text-center">Loại Tin</th>
                                                   <th class="text-center">Tiêu Đề</th>
                                               </tr>
                                           </thead>
@@ -146,10 +150,12 @@
                                                   </td>
                                                   <td>
                                                       <div class="text-center">
-                                                          <a href="detail.html" class="black"><strong>1613496</strong></a>
+                                                          <a href="detail.html"
+                                                              class="black"><strong>1613496</strong></a>
                                                       </div>
                                                       <div class="thumbnail">
-                                                          <a href="detail.html"><img src="assets/img/item-1.png"></a>
+                                                          <a href="detail.html"><img
+                                                                  src="assets/img/item-1.png"></a>
                                                       </div>
                                                   </td>
                                                   <td>
@@ -165,38 +171,51 @@
                                                           <strong>Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu</strong>
                                                       </div>
                                                       <div class="border-dotted padding">
-                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span class="gray">Hết hạn: </span>08:24 07/06/2019 | <span class="gray">Cập nhật: </span>08:24 07/06/2019
-                                                          <span class="gray">Ngày Up miễn phí gần đây: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span
+                                                              class="gray">Hết hạn: </span>08:24 07/06/2019 | <span
+                                                              class="gray">Cập nhật: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày Up miễn phí gần đây:
+                                                          </span>08:24 07/06/2019
                                                       </div>
                                                       <div class="grid-x grid-margin-x padding">
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Sửa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="alert-color"  href="#">Xóa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Tạm dừng</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Sửa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small alert large-down-expanded"
+                                                                          href="#">Xóa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-6 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Tạm dừng</button>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                  <div class="cell small-4">
-                                                                          <a class="success-color"  href="#">Up miễn phí</a>
-                                                                      </div>
-                                                                      <div class="cell small-offset-3 small-5">
-                                                                          <a class="primary-color" href="#">Nâng cấp VIP</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell small-6">
+                                                                      <button
+                                                                          class="hollow button small success large-down-expanded"
+                                                                          href="#">Up miễn phí</button>
+                                                                  </div>
+                                                                  <div class="cell small-6">
+                                                                      <a
+                                                                          class="hollow button small primary large-down-expanded"
+                                                                          href="upgrade.html">Nâng cấp VIP</a>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                              
-                                                              
+      
+      
                                                       </div>
                                                   </td>
-                                              </tr>   
+                                              </tr>
                                               <tr>
                                                   <td>
                                                       <div class="text-center">
@@ -205,10 +224,12 @@
                                                   </td>
                                                   <td>
                                                       <div class="text-center">
-                                                          <a href="detail.html" class="black"><strong>1434146</strong></a>
+                                                          <a href="detail.html"
+                                                              class="black"><strong>1434146</strong></a>
                                                       </div>
                                                       <div class="thumbnail">
-                                                          <a href="detail.html"><img src="assets/img/item-2.png"></a>
+                                                          <a href="detail.html"><img
+                                                                  src="assets/img/item-2.png"></a>
                                                       </div>
                                                   </td>
                                                   <td>
@@ -224,38 +245,51 @@
                                                           <strong>Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu</strong>
                                                       </div>
                                                       <div class="border-dotted padding">
-                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span class="gray">Hết hạn: </span>08:24 07/06/2019 | <span class="gray">Cập nhật: </span>08:24 07/06/2019
-                                                          <span class="gray">Ngày Up miễn phí gần đây: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span
+                                                              class="gray">Hết hạn: </span>08:24 07/06/2019 | <span
+                                                              class="gray">Cập nhật: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày Up miễn phí gần đây:
+                                                          </span>08:24 07/06/2019
                                                       </div>
                                                       <div class="grid-x grid-margin-x padding">
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Sửa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="alert-color"  href="#">Xóa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Tạm dừng</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Sửa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small alert large-down-expanded"
+                                                                          href="#">Xóa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-6 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Tạm dừng</button>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                  <div class="cell small-4">
-                                                                          <a class="success-color"  href="#">Up miễn phí</a>
-                                                                      </div>
-                                                                      <div class="cell small-offset-3 small-5">
-                                                                          <a class="primary-color" href="#">Nâng cấp VIP</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell small-6">
+                                                                      <button
+                                                                          class="hollow button small success large-down-expanded"
+                                                                          href="#">Up miễn phí</button>
+                                                                  </div>
+                                                                  <div class="cell small-6">
+                                                                      <a
+                                                                          class="hollow button small primary large-down-expanded"
+                                                                          href="upgrade.html">Nâng cấp VIP</a>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                              
-                                                              
+      
+      
                                                       </div>
                                                   </td>
-                                              </tr>   
+                                              </tr>
                                               <tr>
                                                   <td>
                                                       <div class="text-center">
@@ -264,10 +298,12 @@
                                                   </td>
                                                   <td>
                                                       <div class="text-center">
-                                                          <a href="detail.html" class="black"><strong>12313496</strong></a>
+                                                          <a href="detail.html"
+                                                              class="black"><strong>12313496</strong></a>
                                                       </div>
                                                       <div class="thumbnail">
-                                                          <a href="detail.html"><img src="assets/img/item-3.png"></a>
+                                                          <a href="detail.html"><img
+                                                                  src="assets/img/item-3.png"></a>
                                                       </div>
                                                   </td>
                                                   <td>
@@ -283,38 +319,51 @@
                                                           <strong>Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu</strong>
                                                       </div>
                                                       <div class="border-dotted padding">
-                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span class="gray">Hết hạn: </span>08:24 07/06/2019 | <span class="gray">Cập nhật: </span>08:24 07/06/2019
-                                                          <span class="gray">Ngày Up miễn phí gần đây: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span
+                                                              class="gray">Hết hạn: </span>08:24 07/06/2019 | <span
+                                                              class="gray">Cập nhật: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày Up miễn phí gần đây:
+                                                          </span>08:24 07/06/2019
                                                       </div>
                                                       <div class="grid-x grid-margin-x padding">
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Sửa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="alert-color"  href="#">Xóa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Tạm dừng</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Sửa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small alert large-down-expanded"
+                                                                          href="#">Xóa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-6 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Tạm dừng</button>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                  <div class="cell small-4">
-                                                                          <a class="success-color"  href="#">Up miễn phí</a>
-                                                                      </div>
-                                                                      <div class="cell small-offset-3 small-5">
-                                                                          <a class="primary-color" href="#">Nâng cấp VIP</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell small-6">
+                                                                      <button
+                                                                          class="hollow button small success large-down-expanded"
+                                                                          href="#">Up miễn phí</button>
+                                                                  </div>
+                                                                  <div class="cell small-6">
+                                                                      <a
+                                                                          class="hollow button small primary large-down-expanded"
+                                                                          href="upgrade.html">Nâng cấp VIP</a>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                              
-                                                              
+      
+      
                                                       </div>
                                                   </td>
-                                              </tr>   
+                                              </tr>
                                               <tr>
                                                   <td>
                                                       <div class="text-center">
@@ -323,10 +372,12 @@
                                                   </td>
                                                   <td>
                                                       <div class="text-center">
-                                                          <a href="detail.html" class="black"><strong>21413496</strong></a>
+                                                          <a href="detail.html"
+                                                              class="black"><strong>21413496</strong></a>
                                                       </div>
                                                       <div class="thumbnail">
-                                                          <a href="detail.html"><img src="assets/img/item-4.png"></a>
+                                                          <a href="detail.html"><img
+                                                                  src="assets/img/item-4.png"></a>
                                                       </div>
                                                   </td>
                                                   <td>
@@ -342,38 +393,51 @@
                                                           <strong>Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu</strong>
                                                       </div>
                                                       <div class="border-dotted padding">
-                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span class="gray">Hết hạn: </span>08:24 07/06/2019 | <span class="gray">Cập nhật: </span>08:24 07/06/2019
-                                                          <span class="gray">Ngày Up miễn phí gần đây: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span
+                                                              class="gray">Hết hạn: </span>08:24 07/06/2019 | <span
+                                                              class="gray">Cập nhật: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày Up miễn phí gần đây:
+                                                          </span>08:24 07/06/2019
                                                       </div>
                                                       <div class="grid-x grid-margin-x padding">
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Sửa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="alert-color"  href="#">Xóa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Tạm dừng</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Sửa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small alert large-down-expanded"
+                                                                          href="#">Xóa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-6 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Tạm dừng</button>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                  <div class="cell small-4">
-                                                                          <a class="success-color"  href="#">Up miễn phí</a>
-                                                                      </div>
-                                                                      <div class="cell small-offset-3 small-5">
-                                                                          <a class="primary-color" href="#">Nâng cấp VIP</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell small-6">
+                                                                      <button
+                                                                          class="hollow button small success large-down-expanded"
+                                                                          href="#">Up miễn phí</button>
+                                                                  </div>
+                                                                  <div class="cell small-6">
+                                                                      <a
+                                                                          class="hollow button small primary large-down-expanded"
+                                                                          href="upgrade.html">Nâng cấp VIP</a>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                              
-                                                              
+      
+      
                                                       </div>
                                                   </td>
-                                              </tr>   
+                                              </tr>
                                               <tr>
                                                   <td>
                                                       <div class="text-center">
@@ -382,10 +446,12 @@
                                                   </td>
                                                   <td>
                                                       <div class="text-center">
-                                                          <a href="detail.html" class="black"><strong>23123</strong></a>
+                                                          <a href="detail.html"
+                                                              class="black"><strong>23123</strong></a>
                                                       </div>
                                                       <div class="thumbnail">
-                                                          <a href="detail.html"><img src="assets/img/item-5.png"></a>
+                                                          <a href="detail.html"><img
+                                                                  src="assets/img/item-5.png"></a>
                                                       </div>
                                                   </td>
                                                   <td>
@@ -401,38 +467,51 @@
                                                           <strong>Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu</strong>
                                                       </div>
                                                       <div class="border-dotted padding">
-                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span class="gray">Hết hạn: </span>08:24 07/06/2019 | <span class="gray">Cập nhật: </span>08:24 07/06/2019
-                                                          <span class="gray">Ngày Up miễn phí gần đây: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span
+                                                              class="gray">Hết hạn: </span>08:24 07/06/2019 | <span
+                                                              class="gray">Cập nhật: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày Up miễn phí gần đây:
+                                                          </span>08:24 07/06/2019
                                                       </div>
                                                       <div class="grid-x grid-margin-x padding">
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Sửa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="alert-color"  href="#">Xóa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Tạm dừng</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Sửa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small alert large-down-expanded"
+                                                                          href="#">Xóa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-6 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Tạm dừng</button>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                  <div class="cell small-4">
-                                                                          <a class="success-color"  href="#">Up miễn phí</a>
-                                                                      </div>
-                                                                      <div class="cell small-offset-3 small-5">
-                                                                          <a class="primary-color" href="#">Nâng cấp VIP</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell small-6">
+                                                                      <button
+                                                                          class="hollow button small success large-down-expanded"
+                                                                          href="#">Up miễn phí</button>
+                                                                  </div>
+                                                                  <div class="cell small-6">
+                                                                      <a
+                                                                          class="hollow button small primary large-down-expanded"
+                                                                          href="upgrade.html">Nâng cấp VIP</a>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                              
-                                                              
+      
+      
                                                       </div>
                                                   </td>
-                                              </tr>   
+                                              </tr>
                                               <tr>
                                                   <td>
                                                       <div class="text-center">
@@ -441,10 +520,12 @@
                                                   </td>
                                                   <td>
                                                       <div class="text-center">
-                                                          <a href="detail.html" class="black"><strong>1613496</strong></a>
+                                                          <a href="detail.html"
+                                                              class="black"><strong>1613496</strong></a>
                                                       </div>
                                                       <div class="thumbnail">
-                                                          <a href="detail.html"><img src="assets/img/item-1.png"></a>
+                                                          <a href="detail.html"><img
+                                                                  src="assets/img/item-1.png"></a>
                                                       </div>
                                                   </td>
                                                   <td>
@@ -460,38 +541,51 @@
                                                           <strong>Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu</strong>
                                                       </div>
                                                       <div class="border-dotted padding">
-                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span class="gray">Hết hạn: </span>08:24 07/06/2019 | <span class="gray">Cập nhật: </span>08:24 07/06/2019
-                                                          <span class="gray">Ngày Up miễn phí gần đây: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span
+                                                              class="gray">Hết hạn: </span>08:24 07/06/2019 | <span
+                                                              class="gray">Cập nhật: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày Up miễn phí gần đây:
+                                                          </span>08:24 07/06/2019
                                                       </div>
                                                       <div class="grid-x grid-margin-x padding">
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Sửa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="alert-color"  href="#">Xóa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Tạm dừng</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Sửa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small alert large-down-expanded"
+                                                                          href="#">Xóa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-6 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Tạm dừng</button>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                  <div class="cell small-4">
-                                                                          <a class="success-color"  href="#">Up miễn phí</a>
-                                                                      </div>
-                                                                      <div class="cell small-offset-3 small-5">
-                                                                          <a class="primary-color" href="#">Nâng cấp VIP</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell small-6">
+                                                                      <button
+                                                                          class="hollow button small success large-down-expanded"
+                                                                          href="#">Up miễn phí</button>
+                                                                  </div>
+                                                                  <div class="cell small-6">
+                                                                      <a
+                                                                          class="hollow button small primary large-down-expanded"
+                                                                          href="upgrade.html">Nâng cấp VIP</a>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                              
-                                                              
+      
+      
                                                       </div>
                                                   </td>
-                                              </tr>   
+                                              </tr>
                                               <tr>
                                                   <td>
                                                       <div class="text-center">
@@ -500,10 +594,12 @@
                                                   </td>
                                                   <td>
                                                       <div class="text-center">
-                                                          <a href="detail.html" class="black"><strong>1434146</strong></a>
+                                                          <a href="detail.html"
+                                                              class="black"><strong>1434146</strong></a>
                                                       </div>
                                                       <div class="thumbnail">
-                                                          <a href="detail.html"><img src="assets/img/item-2.png"></a>
+                                                          <a href="detail.html"><img
+                                                                  src="assets/img/item-2.png"></a>
                                                       </div>
                                                   </td>
                                                   <td>
@@ -519,38 +615,51 @@
                                                           <strong>Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu</strong>
                                                       </div>
                                                       <div class="border-dotted padding">
-                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span class="gray">Hết hạn: </span>08:24 07/06/2019 | <span class="gray">Cập nhật: </span>08:24 07/06/2019
-                                                          <span class="gray">Ngày Up miễn phí gần đây: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span
+                                                              class="gray">Hết hạn: </span>08:24 07/06/2019 | <span
+                                                              class="gray">Cập nhật: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày Up miễn phí gần đây:
+                                                          </span>08:24 07/06/2019
                                                       </div>
                                                       <div class="grid-x grid-margin-x padding">
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Sửa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="alert-color"  href="#">Xóa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Tạm dừng</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Sửa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small alert large-down-expanded"
+                                                                          href="#">Xóa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-6 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Tạm dừng</button>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                  <div class="cell small-4">
-                                                                          <a class="success-color"  href="#">Up miễn phí</a>
-                                                                      </div>
-                                                                      <div class="cell small-offset-3 small-5">
-                                                                          <a class="primary-color" href="#">Nâng cấp VIP</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell small-6">
+                                                                      <button
+                                                                          class="hollow button small success large-down-expanded"
+                                                                          href="#">Up miễn phí</button>
+                                                                  </div>
+                                                                  <div class="cell small-6">
+                                                                      <a
+                                                                          class="hollow button small primary large-down-expanded"
+                                                                          href="upgrade.html">Nâng cấp VIP</a>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                              
-                                                              
+      
+      
                                                       </div>
                                                   </td>
-                                              </tr>   
+                                              </tr>
                                               <tr>
                                                   <td>
                                                       <div class="text-center">
@@ -559,10 +668,12 @@
                                                   </td>
                                                   <td>
                                                       <div class="text-center">
-                                                          <a href="detail.html" class="black"><strong>12313496</strong></a>
+                                                          <a href="detail.html"
+                                                              class="black"><strong>12313496</strong></a>
                                                       </div>
                                                       <div class="thumbnail">
-                                                          <a href="detail.html"><img src="assets/img/item-3.png"></a>
+                                                          <a href="detail.html"><img
+                                                                  src="assets/img/item-3.png"></a>
                                                       </div>
                                                   </td>
                                                   <td>
@@ -578,38 +689,51 @@
                                                           <strong>Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu</strong>
                                                       </div>
                                                       <div class="border-dotted padding">
-                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span class="gray">Hết hạn: </span>08:24 07/06/2019 | <span class="gray">Cập nhật: </span>08:24 07/06/2019
-                                                          <span class="gray">Ngày Up miễn phí gần đây: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span
+                                                              class="gray">Hết hạn: </span>08:24 07/06/2019 | <span
+                                                              class="gray">Cập nhật: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày Up miễn phí gần đây:
+                                                          </span>08:24 07/06/2019
                                                       </div>
                                                       <div class="grid-x grid-margin-x padding">
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Sửa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="alert-color"  href="#">Xóa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Tạm dừng</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Sửa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small alert large-down-expanded"
+                                                                          href="#">Xóa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-6 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Tạm dừng</button>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                  <div class="cell small-4">
-                                                                          <a class="success-color"  href="#">Up miễn phí</a>
-                                                                      </div>
-                                                                      <div class="cell small-offset-3 small-5">
-                                                                          <a class="primary-color" href="#">Nâng cấp VIP</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell small-6">
+                                                                      <button
+                                                                          class="hollow button small success large-down-expanded"
+                                                                          href="#">Up miễn phí</button>
+                                                                  </div>
+                                                                  <div class="cell small-6">
+                                                                      <a
+                                                                          class="hollow button small primary large-down-expanded"
+                                                                          href="upgrade.html">Nâng cấp VIP</a>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                              
-                                                              
+      
+      
                                                       </div>
                                                   </td>
-                                              </tr>   
+                                              </tr>
                                               <tr>
                                                   <td>
                                                       <div class="text-center">
@@ -618,10 +742,12 @@
                                                   </td>
                                                   <td>
                                                       <div class="text-center">
-                                                          <a href="detail.html" class="black"><strong>21413496</strong></a>
+                                                          <a href="detail.html"
+                                                              class="black"><strong>21413496</strong></a>
                                                       </div>
                                                       <div class="thumbnail">
-                                                          <a href="detail.html"><img src="assets/img/item-4.png"></a>
+                                                          <a href="detail.html"><img
+                                                                  src="assets/img/item-4.png"></a>
                                                       </div>
                                                   </td>
                                                   <td>
@@ -637,38 +763,51 @@
                                                           <strong>Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu</strong>
                                                       </div>
                                                       <div class="border-dotted padding">
-                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span class="gray">Hết hạn: </span>08:24 07/06/2019 | <span class="gray">Cập nhật: </span>08:24 07/06/2019
-                                                          <span class="gray">Ngày Up miễn phí gần đây: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span
+                                                              class="gray">Hết hạn: </span>08:24 07/06/2019 | <span
+                                                              class="gray">Cập nhật: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày Up miễn phí gần đây:
+                                                          </span>08:24 07/06/2019
                                                       </div>
                                                       <div class="grid-x grid-margin-x padding">
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Sửa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="alert-color"  href="#">Xóa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Tạm dừng</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Sửa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small alert large-down-expanded"
+                                                                          href="#">Xóa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-6 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Tạm dừng</button>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                  <div class="cell small-4">
-                                                                          <a class="success-color"  href="#">Up miễn phí</a>
-                                                                      </div>
-                                                                      <div class="cell small-offset-3 small-5">
-                                                                          <a class="primary-color" href="#">Nâng cấp VIP</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell small-6">
+                                                                      <button
+                                                                          class="hollow button small success large-down-expanded"
+                                                                          href="#">Up miễn phí</button>
+                                                                  </div>
+                                                                  <div class="cell small-6">
+                                                                      <a
+                                                                          class="hollow button small primary large-down-expanded"
+                                                                          href="upgrade.html">Nâng cấp VIP</a>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                              
-                                                              
+      
+      
                                                       </div>
                                                   </td>
-                                              </tr>   
+                                              </tr>
                                               <tr>
                                                   <td>
                                                       <div class="text-center">
@@ -677,10 +816,12 @@
                                                   </td>
                                                   <td>
                                                       <div class="text-center">
-                                                          <a href="detail.html" class="black"><strong>23123</strong></a>
+                                                          <a href="detail.html"
+                                                              class="black"><strong>23123</strong></a>
                                                       </div>
                                                       <div class="thumbnail">
-                                                          <a href="detail.html"><img src="assets/img/item-5.png"></a>
+                                                          <a href="detail.html"><img
+                                                                  src="assets/img/item-5.png"></a>
                                                       </div>
                                                   </td>
                                                   <td>
@@ -696,61 +837,76 @@
                                                           <strong>Bán gấp 2 khách sạn lớn bãi sau Vũng Tàu hơn 60 phòng Thành phố Vũng Tàu</strong>
                                                       </div>
                                                       <div class="border-dotted padding">
-                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span class="gray">Hết hạn: </span>08:24 07/06/2019 | <span class="gray">Cập nhật: </span>08:24 07/06/2019
-                                                          <span class="gray">Ngày Up miễn phí gần đây: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày đăng: </span>08:24 09/03/2019 | <span
+                                                              class="gray">Hết hạn: </span>08:24 07/06/2019 | <span
+                                                              class="gray">Cập nhật: </span>08:24 07/06/2019
+                                                          <span class="gray">Ngày Up miễn phí gần đây:
+                                                          </span>08:24 07/06/2019
                                                       </div>
                                                       <div class="grid-x grid-margin-x padding">
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Sửa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="alert-color"  href="#">Xóa</a>
-                                                                      </div>
-                                                                      <div class="cell small-4">
-                                                                          <a class="secondary-color" href="#">Tạm dừng</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Sửa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-3 small-4">
+                                                                      <button
+                                                                          class="hollow button small alert large-down-expanded"
+                                                                          href="#">Xóa</button>
+                                                                  </div>
+                                                                  <div class="cell medium-6 small-4">
+                                                                      <button
+                                                                          class="hollow button small secondary large-down-expanded"
+                                                                          href="#">Tạm dừng</button>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                          <div class="cell small-6">
-                                                              <div class="grid-x">
-                                                                  <div class="cell small-4">
-                                                                          <a class="success-color"  href="#">Up miễn phí</a>
-                                                                      </div>
-                                                                      <div class="cell small-offset-3 small-5">
-                                                                          <a class="primary-color" href="#">Nâng cấp VIP</a>
-                                                                      </div>
+                                                          <div class="cell medium-6">
+                                                              <div class="grid-x grid-margin-x">
+                                                                  <div class="cell small-6">
+                                                                      <button
+                                                                          class="hollow button small success large-down-expanded"
+                                                                          href="#">Up miễn phí</button>
+                                                                  </div>
+                                                                  <div class="cell small-6">
+                                                                      <a
+                                                                          class="hollow button small primary large-down-expanded"
+                                                                          href="upgrade.html">Nâng cấp VIP</a>
+                                                                  </div>
                                                               </div>
                                                           </div>
-                                                              
-                                                              
+      
+      
                                                       </div>
                                                   </td>
-                                              </tr>   
+                                              </tr>
                                           </tbody>
                                       </table>
                                   </div>
+                                  <!-- End Table -->
+      
+                                  <!-- Pagination -->
+                                  <div class="cell">
+                                      <nav aria-label="Pagination">
+                                          <ul class="pagination text-center">
+                                              <li class="pagination-previous disabled">Trước</li>
+                                              <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                                              <li><a href="#" aria-label="Page 2">2</a></li>
+                                              <li><a href="#" aria-label="Page 3">3</a></li>
+                                              <li><a href="#" aria-label="Page 4">4</a></li>
+                                              <li class="ellipsis"></li>
+                                              <li><a href="#" aria-label="Page 12">12</a></li>
+                                              <li><a href="#" aria-label="Page 13">13</a></li>
+                                              <li class="pagination-next"><a href="#" aria-label="Next page">Sau</a></li>
+                                          </ul>
+                                      </nav>                            </div>
+                                  <!-- End Pagination -->
                               </div>
-                              <nav aria-label="Pagination">
-                                      <ul class="pagination text-center">
-                                          <li class="pagination-previous disabled">Trước</li>
-                                          <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-                                          <li><a href="#" aria-label="Page 2">2</a></li>
-                                          <li><a href="#" aria-label="Page 3">3</a></li>
-                                          <li><a href="#" aria-label="Page 4">4</a></li>
-                                          <li class="ellipsis"></li>
-                                          <li><a href="#" aria-label="Page 12">12</a></li>
-                                          <li><a href="#" aria-label="Page 13">13</a></li>
-                                          <li class="pagination-next"><a href="#" aria-label="Next page">Sau</a></li>
-                                      </ul>
-                                  </nav>
                           </div>
                       </div>
                   </div>
-                  <!-- End Lọc -->
-      
-      
               </div>
           </form>
       </div>

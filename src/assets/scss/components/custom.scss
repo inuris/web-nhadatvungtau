@@ -27,6 +27,9 @@ h5 {
 }
 h1 {
 	font-size: 1.8rem;
+	&.subheader{
+		font-size: 1.2rem;
+	}
 }
 h2 {
 	font-size: 1.6rem;
@@ -55,7 +58,7 @@ form {
   input, select{
     margin-bottom: 0.5rem;
     @include breakpoint(small only){
-      margin-bottom: 0rem;
+      margin-bottom: 0rem !important;
     }
   }
 	label {
@@ -88,6 +91,30 @@ form {
 			color: $black;
 		}
 	}
+}
+p, strong, span, a{
+	&.black{
+		color: $black;
+	}
+	&.gray{
+		color: $dark-gray;
+	}
+	&.primary-color{
+		color: $primary-color;
+	}
+	&.secondary-color{
+		color: $secondary-color;
+	}
+	&.alert-color{
+		color: $alert-color;
+	}
+	&.success-color{
+		color: $success-color;
+	}
+}
+blockquote{
+	border-left:3px solid $light-gray;
+	padding: 0.5625rem 1.25rem 0.05rem 1.1875rem;
 }
 
 /**
@@ -274,8 +301,7 @@ footer {
 		padding: 0;
 		font-weight: bold;
 		position: relative;
-		min-height: 40px;
-		
+		min-height: 40px;		
 		h2 {
 			color: $white;
 			font-size: 1rem;
@@ -284,6 +310,16 @@ footer {
 			font-weight: bold;
 			margin: 0;
 		}
+		&.lighter{
+			background: $tertiary-color;
+		}
+		&.gray{
+			background: $light-gray;
+			h2 {
+				text-transform: uppercase;
+				color: $black;
+			}
+		}		
 		a {
 			color: $white;
 			margin-right: 1rem;
@@ -307,16 +343,10 @@ footer {
 	}
 	.box-content {
 		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 	&.info {
 		margin-top: 0.5rem;
-		.title-bar {
-			background: $light-gray;
-			h2 {
-				text-transform: uppercase;
-				color: $black;
-			}
-		}
 	}
 }
 
@@ -445,10 +475,7 @@ footer {
 		}
 	}
 }
-#search {
-	.title-bar {
-		background: $tertiary-color;
-	}
+#search {	
 	.box-container {
 		border: 2px solid $tertiary-color;
 		border-top: 0;
@@ -590,28 +617,13 @@ footer {
 		}
 		td{
 			font-size: 0.825rem;
-			border-right: 1px solid $light-gray;
-			.black{
-				color: $black;
-			}
-			.gray{
-				color: $dark-gray;
-			}
-			.primary-color{
-				color: $primary-color;
-			}
-			.secondary-color{
-				color: $secondary-color;
-			}
-			.alert-color{
-				color: $alert-color;
-			}
-			.success-color{
-				color: $success-color;
-			}
+			border-right: 1px solid $light-gray;			
 			.padding{
 				padding-bottom: 0.4rem;
 				padding-top: 0.4rem;
+				&:last-child{
+					padding-bottom:0;
+				}
 			}
 			.border-dotted{				
 				border-bottom: 1px dotted $light-gray;

@@ -1,0 +1,77 @@
+info:
+  - {
+    key: Mã tài khoản,
+    value: 66278,
+    id: id
+  }
+  - {
+    key: Tên truy cập,
+    value: huynhphuquy,
+    id: username
+  }
+  - {
+    key: Ngày đăng ký,
+    value: 09:36 20/09/2016,
+    id: date-created
+  }
+  - {
+    key: Trạng thái hoạt động,
+    value: Đang hoạt động,
+    id: status
+  }
+  - {
+    key: Số dư tài khoản,
+    value: 0 đồng,
+    id: balance
+  }
+  - {
+    key: Số lần đã bị khóa,
+    value: ,
+    id: lock-count
+  }
+  - {
+    key: Lý do khóa,
+    value: ,
+    id: lock-reason
+  }
+  - {
+    key: Lần bị khóa gần nhất,
+    value: ,
+    id: lock-time
+  }
+contact:
+  - {
+    key: Tên chủ tài khoản,
+    value: Huỳnh Phú Quý,
+    id: fullname
+  }
+  - {
+    key: Email liên hệ,
+    value: binhminhvt2009@gmail.com,
+    id: email
+  }
+  - {
+    key: Nhập lại email,
+    value: binhminhvt2009@gmail.com,
+    id: email-repeat
+  }
+  - {
+    key: Tỉnh/Thành phố,
+    value: BRVT,
+    id: city
+  }
+  - {
+    key: Quận/Huyện,
+    value: Vũng Tàu,
+    id: district
+  }
+  - {
+    key: Di dộng 1,
+    value: ,
+    id: phone-1
+  }
+  - {
+    key: Di động 2,
+    value: ,
+    id: phone-2
+  }
