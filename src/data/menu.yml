@@ -1,7 +1,32 @@
-- Trang chủ
-- Giới thiệu
-- Chuyển nhượng dự án
-- Nhà đất cho thuê
-- Nhà đất bán
-- Tin tức
-- Liên hệ
+- main: Trang chủ
+  href: '.'
+- main: Giới thiệu
+  href: about.html
+- main: Chuyển nhượng dự án
+  href: list.html
+  subcat: 
+  - sub: Nhà phố
+  - sub: Nhà riêng
+  - sub: Biệt thự
+  - sub: Chung cư
+- main: Nhà đất cho thuê
+  href: list.html
+  subcat:
+  - sub: Nhà phố
+  - sub: Nhà riêng
+  - sub: Biệt thự
+  - sub: Chung cư
+- main: Nhà đất bán
+  href: list.html
+  subcat: 
+  - sub: Nhà phố
+  - sub: Nhà riêng
+  - sub: Biệt thự
+  - sub: Chung cư
+- main: Tin tức
+  href: news.html
+  subcat: 
+  - sub: Tin BĐS nổi bật
+  - sub: Thị trường
+- main: Liên hệ
+  href: contact.html

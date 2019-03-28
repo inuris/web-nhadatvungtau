@@ -1,0 +1,20 @@
+- {
+    key: Họ Tên,
+    required: required,
+    id: fullname
+  }
+- {
+    key: Email,
+    required: required,
+    id: email
+  }
+- {
+    key: Địa Chỉ,
+    required: ,
+    id: address
+  }
+- {
+    key: Điện Thoại,
+    required: ,
+    id: tel
+  }

@@ -6,6 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhà đất Vũng Tàu</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
 <body>
@@ -13,7 +15,7 @@
 <header id="page-header">
     <div class="grid-container">
         <div class="grid-x grid-12">
-            <div class="cell medium-4 small-12 text-center">
+            <div class="cell medium-4 small-12 text-center">                
                 <a class="logo align-center" href="."><img class="" src="assets/img/logo.png"></a>
             </div>
             <div class="cell medium-8 small-12">
@@ -22,7 +24,7 @@
                         <h1 class="slogan text-center">Không Gian Bất Động Sản Hoàn Hảo</h1>
                     </div>
                     <div class="cell small-12">
-                        <ul class="menu simple align-right small-align-center">
+                        <ul class="menu simple align-right">
                             <li><a href="postnew.html">Đăng tin miễn phí</a></li>
                             <li><a href="account.html">Đăng ký thành viên</a></li>
                             <li><a href="postmanagement.html">Đăng nhập</a></li>
@@ -33,33 +35,57 @@
         </div>
     </div>
 </header>
-<nav class="top-bar topbar-responsive">
-    <div id="topbar-responsive" class="grid-container topbar-responsive-links">
-        <div class="top-bar-center">
-            <ul class="menu simple vertical medium-horizontal">
-                <li class="nav-item" id="nav-item-1">
-                    <a href=".">Trang chủ</a>
-                </li>
-                <li class="nav-item" id="nav-item-2">
-                    <a href="#">Giới thiệu</a>
-                </li>
-                <li class="nav-item" id="nav-item-3">
-                    <a href="list.html">Chuyển nhượng dự án</a>
-                </li>
-                <li class="nav-item" id="nav-item-4">
-                    <a href="list.html">Nhà đất cho thuê</a>
-                </li>
-                <li class="nav-item" id="nav-item-5">
-                    <a href="list.html">Nhà đất bán</a>
-                </li>
-                <li class="nav-item" id="nav-item-6">
-                    <a href="#">Tin tức</a>
-                </li>
-                <li class="nav-item" id="nav-item-7">
-                    <a href="#">Liên hệ</a>
-                </li>
-            </ul>
-        </div>
+
+<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+</div>
+<nav id="responsive-menu" class="main-menu" data-animate="hinge-in-from-top hinge-out-from-top">
+    <div class="grid-container">
+        <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
+            <li class="nav-item">
+                <a href=".">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+                <a href="list.html">Chuyển nhượng dự án</a>
+                <ul class="menu">
+                    <li><a href="list.html">Nhà phố</a></li>
+                    <li><a href="list.html">Nhà riêng</a></li>
+                    <li><a href="list.html">Biệt thự</a></li>
+                    <li><a href="list.html">Chung cư</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="list.html">Nhà đất cho thuê</a>
+                <ul class="menu">
+                    <li><a href="list.html">Nhà phố</a></li>
+                    <li><a href="list.html">Nhà riêng</a></li>
+                    <li><a href="list.html">Biệt thự</a></li>
+                    <li><a href="list.html">Chung cư</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="list.html">Nhà đất bán</a>
+                <ul class="menu">
+                    <li><a href="list.html">Nhà phố</a></li>
+                    <li><a href="list.html">Nhà riêng</a></li>
+                    <li><a href="list.html">Biệt thự</a></li>
+                    <li><a href="list.html">Chung cư</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="news.html">Tin tức</a>
+                <ul class="menu">
+                    <li><a href="list.html">Tin BĐS nổi bật</a></li>
+                    <li><a href="list.html">Thị trường</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html">Liên hệ</a>
+            </li>
+        </ul>
     </div>
 </nav>
   <div class="grid-container">

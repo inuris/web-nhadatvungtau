@@ -1,0 +1,33 @@
+---
+title: Tin tức
+---
+<div id="list" class="no-box product">
+    <div class="grid-x">
+        <div class="title">
+            <h1>{{title}}</h1>
+        </div>        
+        {{#each news.featured}}
+        <div class="cell item">
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-3 text-center">
+                    <div class="thumbnail">
+                        <a href="detail.html"><img src="{{root}}assets/img/{{this.image}}"></a>
+                    </div>
+                </div>
+                <div class="cell medium-9">
+                    <div class="content">
+                        <a href="detail.html">
+                            <h4>{{this.title}}</h4>
+                        </a>
+                        <p>{{this.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        <div class="cell">
+            {{> pagination}}
+        </div>
+        
+    </div>
+</div>
