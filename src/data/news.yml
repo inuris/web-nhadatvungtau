@@ -64,33 +64,21 @@ featured:
       image: 'item-5.png'
     }
 userpost:
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+    vip: true
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+    vip: true
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+    vip: true
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703

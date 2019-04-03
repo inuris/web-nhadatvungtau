@@ -20,24 +20,9 @@ info:
     id: status
   }
   - {
-    key: Số dư tài khoản,
-    value: 0 đồng,
-    id: balance
-  }
-  - {
-    key: Số lần đã bị khóa,
-    value: ,
-    id: lock-count
-  }
-  - {
     key: Lý do khóa,
     value: ,
     id: lock-reason
-  }
-  - {
-    key: Lần bị khóa gần nhất,
-    value: ,
-    id: lock-time
   }
 contact:
   - {
