@@ -574,7 +574,8 @@ footer {
 		}
 		td{
 			font-size: 0.825rem;
-			border-right: 1px solid $light-gray;			
+			border-right: 1px solid $light-gray;
+			padding-bottom: 0;			
 			.padding{
 				padding-bottom: 0.4rem;
 				padding-top: 0.4rem;
@@ -591,6 +592,9 @@ footer {
 				border:0;
 				box-shadow: 0;
 				margin: auto;
+			}
+			.button.hollow{
+				border: none;
 			}
 		}		
 	}
@@ -624,4 +628,22 @@ footer {
 }
 .swiper-button-white{
 	top:40%;
+}
+
+.top-bar{
+	background: darken($secondary-color, 10%);
+	justify-content: center;
+	span{
+		font-size:0.9rem;
+		color: $white;
+	}
+	strong{
+		&.primary{
+			color: lighten($primary-color, 18%);
+		}
+		&.secondary{
+			color: lighten($tertiary-color, 30%);
+		}
+		
+	}
 }
