@@ -77,55 +77,34 @@ title: VV37 - Biệt Thự Hồ Bơi, View Biển Cho Thuê Dài Hạn
         <!-- Slide -->
         <div class="cell">
             <div class="swiper-container">
-            <div class="gallery-top">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-1.png)">
+                <div class="gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-1.png)">
+                        </div>
+                        <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-2.png)">
+                        </div>
+                        <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-1.png)">
+                        </div>
+                        <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-2.png)">
+                        </div>
                     </div>
-                    <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-2.png)">
-                    </div>
-                    <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-1.png)">
-                    </div>
-                    <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-2.png)">
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+                <div class="gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-1.png)">
+                        </div>
+                        <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-2.png)">
+                        </div>
+                        <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-1.png)">
+                        </div>
+                        <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-2.png)">
+                        </div>
                     </div>
                 </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
             </div>
-            <div class="gallery-thumbs">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-1.png)">
-                    </div>
-                    <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-2.png)">
-                    </div>
-                    <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-1.png)">
-                    </div>
-                    <div class="swiper-slide" style="background-image:url({{root}}/assets/img/slide-2.png)">
-                    </div>
-                </div>
-            </div>
-            </div>
-            <!-- <div class="orbit" role="region" data-orbit>
-                <div class="orbit-wrapper">
-                    <div class="orbit-controls">
-                        <button class="orbit-previous"><span class="show-for-sr">Previous
-                                Slide</span>&#9664;&#xFE0E;</button>
-                        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-                    </div>
-                    <ul class="orbit-container">
-                        <li class="is-active orbit-slide">
-                            <figure class="orbit-figure">
-                                <img class="orbit-image" src="{{root}}/assets/img/slide-1.png" alt="Space">
-                            </figure>
-                        </li>
-                        <li class="orbit-slide">
-                            <figure class="orbit-figure">
-                                <img class="orbit-image" src="{{root}}/assets/img/slide-2.png" alt="Space">
-                            </figure>
-                        </li>
-                    </ul>
-                </div>
-            </div> -->
         </div>
         <!-- End Slide -->
 
@@ -236,12 +215,11 @@ title: VV37 - Biệt Thự Hồ Bơi, View Biển Cho Thuê Dài Hạn
         </div>
         {{#each news.featured}}
         <div class="cell item">
-            <div class="grid-x grid-margin-x">
+            <div class="grid-x grid-margin-x grid-padding-y">
                 <div class="cell medium-3 text-center">
                     <div class="thumbnail">
                         <a href="detail.html"><img src="{{root}}assets/img/{{this.image}}"></a>
                     </div>
-                    <a href="detail.html" class="button small">Chi tiết</a>
                 </div>
                 <div class="cell medium-7 small-9">
                     <div class="content">
