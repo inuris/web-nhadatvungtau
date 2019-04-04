@@ -13,7 +13,8 @@ featured:
       title: 'Căn hộ lý tưởng giá cả phải chăng tại trung tâm', 
       description: 'Nhà 1 trệt 1 lửng 1 lầu cách bùng binh Mũ 700m • Thiết kế năng động , trẻ trung, không gian sống thông thoáng • Sàn thật 100 %, diện tích sử dụng lên đến 150m2,',
       price: '9,8 tỷ',
-      image: 'item-2.png'
+      image: 'item-2.png',
+      vip: true
     }
   - {
       title: 'Căn hộ lý tưởng giá cả phải chăng tại trung tâm', 
@@ -43,7 +44,8 @@ featured:
       title: 'Căn hộ lý tưởng giá cả phải chăng tại trung tâm', 
       description: 'Nhà 1 trệt 1 lửng 1 lầu cách bùng binh Mũ 700m • Thiết kế năng động , trẻ trung, không gian sống thông thoáng • Sàn thật 100 %, diện tích sử dụng lên đến 150m2,',
       price: '9,8 tỷ',
-      image: 'item-2.png'
+      image: 'item-2.png',
+      vip: true
     }
   - {
       title: 'Căn hộ lý tưởng giá cả phải chăng tại trung tâm', 

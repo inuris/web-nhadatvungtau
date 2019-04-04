@@ -1,123 +1,187 @@
 /**
  ** GENERAL
  **/
-
+$red: #f00;
 //.cell{ border:1px solid red;}
 
 @mixin transition($transition...) {
-	-moz-transition: $transition;
-	-o-transition: $transition;
-	-webkit-transition: $transition;
-	transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
 }
 
+// prefix keyframes
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+@mixin animation($delay, $duration, $animation, $direction: normal, $fillmode: forwards, $count: infinite) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-name: $animation;
+  -webkit-animation-fill-mode: $fillmode;
+	-webkit-animation-direction: $direction;
+	-webkit-animation-iteration-count:$count;
+
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-name: $animation;
+  -moz-animation-fill-mode: $fillmode;
+	-moz-animation-direction: $direction;
+	-moz-animation-iteration-count:$count;
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-fill-mode: $fillmode;
+	animation-direction: $direction;
+	animation-iteration-count: $count;
+}
 @mixin background($filename) {
-	background: url(../../assets/img/#{$filename}) no-repeat;
+  background: url(../../assets/img/#{$filename}) no-repeat;
 }
 h1,
 h2,
 h3 {
-	color: $secondary-color;
-	font-weight: bold;
+  color: $secondary-color;
+  font-weight: bold;
 }
 h4,
 h5 {
-	color: $black;
-	font-weight: bold;
+  color: $black;
+  font-weight: bold;
 }
 h1 {
-	font-size: 1.8rem;
-	&.subheader{
-		font-size: 1.2rem;
-	}
+  font-size: 1.8rem;
+  &.subheader {
+    font-size: 1.2rem;
+  }
 }
 h2 {
-	font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 h3 {
-	font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 h4 {
-	font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 h5 {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 h6 {
-	font-size: 0.825rem;
+  font-size: 0.825rem;
 }
 h6.notice {
-	color: $primary-color;
+  color: $primary-color;
 }
 select {
-	padding-top: 0.3rem;
-	padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 
 form {
-  input, select{
+  input,
+  select {
     margin-bottom: 0.5rem;
-    @include breakpoint(small only){
+    @include breakpoint(small only) {
       margin-bottom: 0rem !important;
     }
   }
-	label {
-		font-size: 0.825rem;
-		&.required {
-			&:after {
-				content: ' *';
-				color: red;
-				font-weight: bold;
-			}
-		}
-		&.middle {
-			margin-bottom: 0;
-		}
-		&.medium-text-right {
-			padding-right: 0.5rem;
-		}
+  label {
+    font-size: 0.825rem;
+    &.required {
+      &:after {
+        content: " *";
+        color: $red;
+        font-weight: bold;
+      }
+    }
+    &.middle {
+      margin-bottom: 0;
+    }
+    &.medium-text-right {
+      padding-right: 0.5rem;
+    }
+  }
+  .cell.has-tip {
+    border-bottom: 0;
+  }
+  .cell.has-checkbox {
+    padding-top: 0.5rem;
+  }
+  button.gray {
+    background: $light-gray;
+    color: $dark-gray;
+    &:hover {
+      background: $medium-gray;
+      color: $black;
+    }
+  }
+}
+p,
+strong,
+span,
+a {
+  &.black {
+    color: $black;
+  }
+  &.gray {
+    color: $dark-gray;
+  }
+  &.primary-color {
+    color: $primary-color;
+  }
+  &.secondary-color {
+    color: $secondary-color;
+  }
+  &.alert-color {
+    color: $alert-color;
+  }
+  &.success-color {
+    color: $success-color;
+  }
+}
+blockquote {
+  border-left: 3px solid $light-gray;
+  padding: 0.5625rem 1.25rem 0.05rem 1.1875rem;
+}
+@include keyframes(vip-flash){
+	0%, 45%{		
+		background: $white;
+		color: $red;		
 	}
-	.cell.has-tip {
-		border-bottom: 0;
-	}
-	.cell.has-checkbox {
-		padding-top: 0.5rem;
-	}
-	button.gray {
-		background: $light-gray;
-		color: $dark-gray;
-		&:hover {
-			background: $medium-gray;
-			color: $black;
-		}
+	55%, 100% {
+		background: $red;
+		color: $white;
+		
 	}
 }
-p, strong, span, a{
-	&.black{
-		color: $black;
-	}
-	&.gray{
-		color: $dark-gray;
-	}
-	&.primary-color{
-		color: $primary-color;
-	}
-	&.secondary-color{
-		color: $secondary-color;
-	}
-	&.alert-color{
-		color: $alert-color;
-	}
-	&.success-color{
-		color: $success-color;
-	}
-}
-blockquote{
-	border-left:3px solid $light-gray;
-	padding: 0.5625rem 1.25rem 0.05rem 1.1875rem;
-}
-.vip{
-	color: #f00 !important;
+.vip {
+  &:before {
+    content: "VIP";
+    background: $white;
+		color: $red;
+		border: 1px solid $red;
+    font-size: 0.7rem;
+    padding: 0.1rem 0.3rem;
+    margin-right: 0.2rem;
+		border-radius: 0.2rem;
+		vertical-align: middle;
+		@include animation(1s,2s,vip-flash, alternate, both);
+		
+  }
 }
 
 /**
@@ -125,528 +189,524 @@ blockquote{
  **/
 
 header {
-	padding-top: 0.8rem;
-	.slogan {
-		padding-top: 1.8rem;
+  padding-top: 0.8rem;
+  .slogan {
+    padding-top: 1.8rem;
     line-height: 1.7rem;
-		font-weight: bold;
+    font-weight: bold;
     color: $primary-color;
-    @include breakpoint(small only){
+    @include breakpoint(small only) {
       font-size: 1.3rem;
     }
-	}
-	.menu {
-		padding: 0.5rem 0;
-		a {
-			color: $black;
-			font-size: 0.9rem;
-			&:hover {
-				color: $primary-color;
-			}
-		}
-	}
+  }
+  .menu {
+    padding: 0.5rem 0;
+    a {
+      color: $black;
+      font-size: 0.9rem;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
 }
 
 /**
  ** FOOTER
  **/
 footer {
-	margin-top: 1rem;
-	.top {
-		background: $primary-color;
-		.menu {
-			a {
-				color: $white;
-			}
-		}
-	}
-	.bottom {
-		background: $dark-gray;
-		padding: 1rem 0;
-		p {
-			color: $white;
-			font-size: 0.8rem;
-			line-height: 1rem;
-			margin-bottom: 0.5rem;
-		}
-		a {
-			color: $white;
-			text-decoration: underline;
-		}
-	}
+  margin-top: 1rem;
+  .top {
+    background: $primary-color;
+    .menu {
+      a {
+        color: $white;
+      }
+    }
+  }
+  .bottom {
+    background: $dark-gray;
+    padding: 1rem 0;
+    p {
+      color: $white;
+      font-size: 0.8rem;
+      line-height: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
 }
 .page-body {
-	margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 /**
  ** MAIN MENU
  **/
 .main-menu {
-	background: $primary-color;
-	padding: 0;
-	.menu {
-		li{
-			a {
-				color: $white;
-				font-weight: bold;
-				@include transition(all .4s);
-				&:hover {
-					color: $white;
-					background-color: darken($primary-color, 10%);
-				}
-			}
-			.submenu{
-				border:0;
-			}
-		}
-	}
-
+  background: $primary-color;
+  padding: 0;
+  .menu {
+    li {
+      a {
+        color: $white;
+        font-weight: bold;
+        @include transition(all 0.4s);
+        &:hover {
+          color: $white;
+          background-color: darken($primary-color, 10%);
+        }
+      }
+      .submenu {
+        border: 0;
+      }
+    }
+  }
 }
 
 .grid-10 {
-	margin: 0.825rem -0.46875rem;
-	& > .cell {
-		@include xy-cell(1 of 10,true, 15px, margin, right left);
-		@include breakpoint(small only) {
-			@include xy-cell(1 of 5,true, 10px, margin, right left);
-		}
-	}
+  margin: 0.825rem -0.46875rem;
+  & > .cell {
+    @include xy-cell(1 of 10, true, 15px, margin, right left);
+    @include breakpoint(small only) {
+      @include xy-cell(1 of 5, true, 10px, margin, right left);
+    }
+  }
 }
 .grid-5 {
-	//margin: 0.825rem -0.46875rem;
-	& > .cell {
-		margin: 0.825rem -0.46875rem;
-		@include xy-cell(1 of 5,true, 15px, margin, right left);
-		@include breakpoint(small only) {
-			@include xy-cell(1 of 5,true, 10px, margin, right left);
-		}
-	}
+  //margin: 0.825rem -0.46875rem;
+  & > .cell {
+    margin: 0.825rem -0.46875rem;
+    @include xy-cell(1 of 5, true, 15px, margin, right left);
+    @include breakpoint(small only) {
+      @include xy-cell(1 of 5, true, 10px, margin, right left);
+    }
+  }
 }
 
 /**
  ** CATEGORY BOXES
  **/
 #category-boxes {
-	.card {
-		border: 0;
-		border-radius: 3px;
-		.card-section {
-			background-color: rgba(255, 255, 255, 0.9);
-			$caption-height: 2.2rem;
-			margin-top: -$caption-height;
-			height: $caption-height;
-			padding: 0.3rem 0.25rem;
-			@include transition(all 0.2s);
-			p {
-				font-size: 0.625rem;
-				line-height: 0.825rem;
-			}
-		}
-		&:hover {
-			.card-section {
-				background-color: $primary-color;
-				color: $white;
-				$caption-height: 2.8rem;
-				margin-top: -$caption-height;
-				height: $caption-height;
-			}
-		}
-	}
+  .card {
+    border: 0;
+    border-radius: 3px;
+    .card-section {
+      background-color: rgba(255, 255, 255, 0.9);
+      $caption-height: 2.2rem;
+      margin-top: -$caption-height;
+      height: $caption-height;
+      padding: 0.3rem 0.25rem;
+      @include transition(all 0.2s);
+      p {
+        font-size: 0.625rem;
+        line-height: 0.825rem;
+      }
+    }
+    &:hover {
+      .card-section {
+        background-color: $primary-color;
+        color: $white;
+        $caption-height: 2.8rem;
+        margin-top: -$caption-height;
+        height: $caption-height;
+      }
+    }
+  }
 }
 
 .box {
-	margin-bottom: 1rem;
-	.title-bar {
-		background: $secondary-color;
-		padding: 0;
-		font-weight: bold;
-		position: relative;
-		min-height: 40px;		
-		h2 {
-			color: $white;
-			font-size: 1rem;
-			padding: 0 1rem;
-			line-height: 1.5rem;
-			font-weight: bold;
-			margin: 0;
-		}
-		&.lighter{
-			background: $tertiary-color;
-		}
-		&.gray{
-			background: $light-gray;
-			h2 {
-				text-transform: uppercase;
-				color: $black;
-			}
-		}		
-		a {
-			color: $white;
-			margin-right: 1rem;
-			font-size: 0.825rem;
-		}
-	}
-	.mark-orange {
-		b {
-			padding: 0 0.3rem;
-		}
-		&:before {
-			content: '';
-			@include background('icon-title-arrow.svg');
-			width: 20px;
-			height: 40px;
-		}
-	}
-	.box-container {
-		padding: 0.5rem 1rem;
-		border: 1px solid $light-gray;
-	}
-	.box-content {
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-	}
-	&.info {
-		margin-top: 0.5rem;
-	}
+  margin-bottom: 1rem;
+  .title-bar {
+    background: $secondary-color;
+    padding: 0;
+    font-weight: bold;
+    position: relative;
+    min-height: 40px;
+    h2 {
+      color: $white;
+      font-size: 1rem;
+      padding: 0 1rem;
+      line-height: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    &.lighter {
+      background: $tertiary-color;
+    }
+    &.gray {
+      background: $light-gray;
+      h2 {
+        text-transform: uppercase;
+        color: $black;
+      }
+    }
+    a {
+      color: $white;
+      margin-right: 1rem;
+      font-size: 0.825rem;
+    }
+  }
+  .mark-orange {
+    b {
+      padding: 0 0.3rem;
+    }
+    &:before {
+      content: "";
+      @include background("icon-title-arrow.svg");
+      width: 20px;
+      height: 40px;
+    }
+  }
+  .box-container {
+    padding: 0.5rem 1rem;
+    border: 1px solid $light-gray;
+  }
+  .box-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &.info {
+    margin-top: 0.5rem;
+  }
 }
 
 .item {
-	.thumbnail {
-		overflow: hidden;
-		border: none;
-		box-shadow: none;
-		margin-bottom:0;
-		@include breakpoint(small only) {
-			width: 100%;
-			img {
-				width: 100%;
-			}
-		}
-		&:hover {
-			img {
-				@include transition(all 0.5s ease-in-out);
-				transform: scale(1.1);
-			}
-		}
-	}
-	.content {
-		h4 {
-			
-			font-size: 1rem;
-			font-weight: bold;
-			color: $black;
-			&:hover {
-				color: $primary-color;
-			}
-		}
-		p {
-			font-size: 0.825rem;
-		}
-		a.more {
-			font-size: 0.825rem;
-		}
-	}
+  .thumbnail {
+    overflow: hidden;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    @include breakpoint(small only) {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &:hover {
+      img {
+        @include transition(all 0.5s ease-in-out);
+        transform: scale(1.1);
+      }
+    }
+  }
+  .content {
+    h4 {
+      font-size: 1rem;
+      font-weight: bold;
+      color: $black;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    p {
+      font-size: 0.825rem;
+    }
+    a.more {
+      font-size: 0.825rem;
+    }
+  }
 }
 
 .news-list {
-	.item {
-		@include background('icon-bullet.svg');
-		background-position: left 0.7rem;
-		border-bottom: 1px dotted $light-gray;
-		padding: 0.3rem;
-		a {
-			font-size: 0.825rem;
-			line-height: 0.625rem;
-			color: $black;
-			padding-left: 0.8rem;
-			&:hover {
-				color: $primary-color;
-			}
-			small{
-				color: $medium-gray;
-			}
-		}
-	}
-	.cell:last-child {
-		.item {
-			border-bottom: 0;
-		}
-	}
+  .item {
+    @include background("icon-bullet.svg");
+    background-position: left 0.7rem;
+    border-bottom: 1px dotted $light-gray;
+    padding: 0.3rem;
+    a {
+      font-size: 0.825rem;
+      line-height: 0.625rem;
+      color: $black;
+      padding-left: 0.8rem;
+      &:hover {
+        color: $primary-color;
+      }
+      small {
+        color: $medium-gray;
+      }
+    }
+  }
+  .cell:last-child {
+    .item {
+      border-bottom: 0;
+    }
+  }
 }
-.rule-list{
-	.item {
-		@include background('icon-bullet.svg');
-		background-position: left 0.7rem;
-		padding: 0.3rem;
-		span {
-			font-size: 0.825rem;
-			line-height: 0.625rem;
-			color: $black;
-			padding-left: 0.8rem;
-		}
-	}
+.rule-list {
+  .item {
+    @include background("icon-bullet.svg");
+    background-position: left 0.7rem;
+    padding: 0.3rem;
+    span {
+      font-size: 0.825rem;
+      line-height: 0.625rem;
+      color: $black;
+      padding-left: 0.8rem;
+    }
+  }
 }
 
 .product {
-	.title {
-		h2 {
-			color: $secondary-color;
-			font-size: 1.2rem;
-			font-weight: bold;
-		}
-	}
-	.item {
-		border-bottom: solid 1px $light-gray;
-		h4 {
-			&:hover {
-				color: $primary-color;
-			}
-		}
-		.price {
-			p {
-				font-size: 1.5rem;
-				line-height: 1.6rem;
-				font-weight: bold;
-				color: $primary-color;
-				@include breakpoint(small only) {
-					font-size: 1.2rem;
-					line-height: 1.2rem;
-				}
-			}
-		}
-		&:last-child {
-			border-bottom: 0;
-		}
-	}
+  .title {
+    h2 {
+      color: $secondary-color;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+  .item {
+    border-bottom: solid 1px $light-gray;
+    h4 {
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    .price {
+      p {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        font-weight: bold;
+        color: $primary-color;
+        @include breakpoint(small only) {
+          font-size: 1.2rem;
+          line-height: 1.2rem;
+        }
+      }
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
 }
 
 #userpost {
-	.item {
-		.content {
-			h4 {
-				font-size: 0.825rem;
-				&:hover {
-					color: $primary-color;
-				}
-			}
-			@include breakpoint(medium up) {
-				margin-left: -0.9375rem;
-			}
-		}
-	}
+  .item {
+    .content {
+      h4 {
+        font-size: 0.825rem;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      @include breakpoint(medium up) {
+        margin-left: -0.9375rem;
+      }
+    }
+  }
 }
-#search {	
-	.box-container {
-		border: 2px solid $tertiary-color;
-		border-top: 0;
-		padding-bottom: 0.25rem;
-		.input-group {
-			margin-bottom: 0.4rem;
-			input,
-			select {
-				margin: 0 auto;
-				height: 2.1rem;
-				font-size: 0.825rem;
-			}
-			button {
-				font-weight: bold;
-				margin: auto;
-				border-radius: 4px;
-			}
-		}
-	}
+#search {
+  .box-container {
+    border: 2px solid $tertiary-color;
+    border-top: 0;
+    padding-bottom: 0.25rem;
+    .input-group {
+      margin-bottom: 0.4rem;
+      input,
+      select {
+        margin: 0 auto;
+        height: 2.1rem;
+        font-size: 0.825rem;
+      }
+      button {
+        font-weight: bold;
+        margin: auto;
+        border-radius: 4px;
+      }
+    }
+  }
 }
 
 #area {
-	.item {
-		@include background('icon-dot.svg');
-		background-position: left 0.8rem;
-		padding: 0.3rem;
-		a {
-			font-size: 0.825rem;
-			line-height: 0.625rem;
-			color: $black;
-			padding: 0 .4rem;
-			&:hover {
-				color: $primary-color;
-			}
-		}
-	}
+  .item {
+    @include background("icon-dot.svg");
+    background-position: left 0.8rem;
+    padding: 0.3rem;
+    a {
+      font-size: 0.825rem;
+      line-height: 0.625rem;
+      color: $black;
+      padding: 0 0.4rem;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
 }
 #ads {
-	.item {
-		margin-bottom: 1rem;
-	}
+  .item {
+    margin-bottom: 1rem;
+  }
 }
 #breadcrumbs {
-	margin-top: 0.8rem;
+  margin-top: 0.8rem;
 }
 .product {
-	.title {
-		margin-bottom: 1rem;
-	}
-	nav {
-		margin: auto;
-	}
-	.info {
-		table {
-			thead {
-				background: $light-gray;
-			}
-			tr {
-				height: 2rem;
-			}
-			td {
-				font-size: 0.825rem;
-				&.key {
-					font-weight: bold;
-					text-align: right;
-				}
-				&.value {
-					color: $dark-gray;
-					text-align: left;
-					i {
-						color: $primary-color;
-					}
-				}
-				&.price {
-					color: $primary-color;
-					font-size: 1.2rem;
-					font-weight: bold;
-				}
-			}
-		}
-		&.contact {
-			.badge {
-				font-size: 1.8rem;
-				border-radius: 6px;
-				padding: 0.4em 0.3em;
-			}
-			p {
-				margin-bottom: 0;
-			}
-		}
-	}
-	.alert {
-		h5 {
-			font-weight: bold;
-		}
-	}
+  .title {
+    margin-bottom: 1rem;
+  }
+  nav {
+    margin: auto;
+  }
+  .info {
+    table {
+      thead {
+        background: $light-gray;
+      }
+      tr {
+        height: 2rem;
+      }
+      td {
+        font-size: 0.825rem;
+        &.key {
+          font-weight: bold;
+          text-align: right;
+        }
+        &.value {
+          color: $dark-gray;
+          text-align: left;
+          i {
+            color: $primary-color;
+          }
+        }
+        &.price {
+          color: $primary-color;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+    }
+    &.contact {
+      .badge {
+        font-size: 1.8rem;
+        border-radius: 6px;
+        padding: 0.4em 0.3em;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .alert {
+    h5 {
+      font-weight: bold;
+    }
+  }
 }
 .post {
-	#map {
-		background: $light-gray;
-		height: 425px;
-		width: 100%;
-	}
-	.upload {
-		.button {
-			background: $light-gray;
-			color: $dark-gray;
-			width: 100%;
-			&:hover {
-				background: $primary-color;
-				color: $white;
-			}
-			&.remove {
-				color: $alert-color;
-				background: $white;
-				border: 1px solid $light-gray;
-				margin-left: -0.625rem;
-				width: 2.1rem;
-			}
-		}
-		.thumbnail {
-			@include background('placeholder-upload.png');
-			width: 100%;
-			min-height: 131px;
-			background-position: center center;
-			background-size: 100%;
-			@include breakpoint(small only) {
-				min-height: 67px;
-			}
-		}
-	}
-	
+  #map {
+    background: $light-gray;
+    height: 425px;
+    width: 100%;
+  }
+  .upload {
+    .button {
+      background: $light-gray;
+      color: $dark-gray;
+      width: 100%;
+      &:hover {
+        background: $primary-color;
+        color: $white;
+      }
+      &.remove {
+        color: $alert-color;
+        background: $white;
+        border: 1px solid $light-gray;
+        margin-left: -0.625rem;
+        width: 2.1rem;
+      }
+    }
+    .thumbnail {
+      @include background("placeholder-upload.png");
+      width: 100%;
+      min-height: 131px;
+      background-position: center center;
+      background-size: 100%;
+      @include breakpoint(small only) {
+        min-height: 67px;
+      }
+    }
+  }
 }
-.post-management{
-	table{
-		th{
-			background: $secondary-color;
-			color: $white;
-		}
-		td{
-			font-size: 0.825rem;
-			border-right: 1px solid $light-gray;
-			padding-bottom: 0;			
-			.padding{
-				padding-bottom: 0.4rem;
-				padding-top: 0.4rem;
-				&:last-child{
-					padding-bottom:0;
-				}
-			}
-			.border-dotted{				
-				border-bottom: 1px dotted $light-gray;
-			}
-			.thumbnail{
-				display:block;
-				max-width: 50px;
-				border:0;
-				box-shadow: 0;
-				margin: auto;
-			}
-			.button.hollow{
-				border: none;
-			}
-		}		
-	}
+.post-management {
+  table {
+    th {
+      background: $secondary-color;
+      color: $white;
+    }
+    td {
+      font-size: 0.825rem;
+      border-right: 1px solid $light-gray;
+      padding-bottom: 0;
+      .padding {
+        padding-bottom: 0.4rem;
+        padding-top: 0.4rem;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+      .border-dotted {
+        border-bottom: 1px dotted $light-gray;
+      }
+      .thumbnail {
+        display: block;
+        max-width: 50px;
+        border: 0;
+        box-shadow: 0;
+        margin: auto;
+      }
+      .button.hollow {
+        border: none;
+      }
+    }
+  }
 }
 
 .swiper-container {
-	width: 100%;
-	height: 450px;
-	margin-left: auto;
-	margin-right: auto;
+  width: 100%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .swiper-slide {
-	background-size: cover;
-	background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 .gallery-top {
-	height: 80%;
-	width: 100%;
+  height: 80%;
+  width: 100%;
 }
 .gallery-thumbs {
-	height: 20%;
-	box-sizing: border-box;
-	padding: 10px 0;
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
 }
 .gallery-thumbs .swiper-slide {
-	height: 100%;
-	opacity: 0.4;
+  height: 100%;
+  opacity: 0.4;
 }
 .gallery-thumbs .swiper-slide-thumb-active {
-	opacity: 1;
+  opacity: 1;
 }
-.swiper-button-white{
-	top:40%;
+.swiper-button-white {
+  top: 40%;
 }
 
-.top-bar{
-	background: darken($secondary-color, 10%);
-	justify-content: center;
-	span{
-		font-size:0.9rem;
-		color: $white;
-	}
-	strong{
-		&.primary{
-			color: lighten($primary-color, 18%);
-		}
-		&.secondary{
-			color: lighten($tertiary-color, 30%);
-		}
-		
-	}
+.top-bar {
+  background: darken($secondary-color, 10%);
+  justify-content: center;
+  span {
+    font-size: 0.9rem;
+    color: $white;
+  }
+  strong {
+    &.primary {
+      color: lighten($primary-color, 18%);
+    }
+    &.secondary {
+      color: lighten($tertiary-color, 30%);
+    }
+  }
 }
