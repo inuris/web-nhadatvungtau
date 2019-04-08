@@ -190,11 +190,30 @@ blockquote {
 
 header {
   padding-top: 0.8rem;
+  .logo {
+    img{
+      margin-bottom: 0.7rem;
+    }
+    .domain{
+      font-weight: bold;
+      margin-bottom: 0;
+      font-size: 1.2rem; 
+    }
+    .subtitle{    
+      color: $primary-color; 
+      font-size: 0.7rem; 
+      line-height: 0.8rem;  
+    }
+  }
   .slogan {
     padding-top: 1.8rem;
     line-height: 1.7rem;
     font-weight: bold;
     color: $primary-color;
+    &.subheader{
+      padding-top: 0;
+      margin-bottom: 1rem;
+    }
     @include breakpoint(small only) {
       font-size: 1.3rem;
     }
@@ -623,7 +642,7 @@ footer {
       width: 100%;
       min-height: 131px;
       background-position: center center;
-      background-size: 100%;
+      background-size: cover;
       @include breakpoint(small only) {
         min-height: 67px;
       }

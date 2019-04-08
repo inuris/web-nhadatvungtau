@@ -19,3 +19,4 @@ $(document).foundation();
 
 require('./pages/detail');
 require('./pages/postmanagement');
+require('./pages/postnew');
