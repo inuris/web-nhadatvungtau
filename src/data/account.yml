@@ -60,3 +60,47 @@ contact:
     value: ,
     id: phone-2
   }
+register:
+- {
+    key: "fa-user",
+    value: Họ và tên,
+    id: fullname,
+    type: text
+  }
+- {
+    key: "fa-phone",
+    value: Điện thoại,
+    id: tel,
+    type: text
+  }
+- {
+    key: "fa-envelope",
+    value: Email,
+    id: email,
+    type: email
+  }
+- {
+    key: "fa-lock",
+    value: Mật khẩu,
+    id: password,
+    type: password
+  }
+- {
+    key: "fa-lock",
+    value: Nhập lại mật khẩu,
+    id: repeat,
+    type: password
+  }
+login:
+- {
+    key: "fa-envelope",
+    value: Email,
+    id: fullname,
+    type: text
+  }
+- {
+    key: "fa-lock",
+    value: Mật khẩu,
+    id: password,
+    type: password
+  }
