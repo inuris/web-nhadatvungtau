@@ -280,7 +280,11 @@ footer {
       }
       .submenu {
         border: 0;
-      }
+        .is-submenu-item>a{
+          font-weight: normal
+        }
+      }      
+      
     }
   }
 }
@@ -729,3 +733,8 @@ footer {
     }
   }
 }
+
+#register{
+  .input-group-label{
+    width:2.8rem;
+  }}

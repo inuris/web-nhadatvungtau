@@ -1,0 +1,43 @@
+---
+layout: onecolumn
+title: ĐĂNG NHẬP
+---
+<div id="register" class="no-box form post">
+    <form>
+        <div class="grid-x grid-margin-x">
+            <div class="cell text-center">
+                <div class="title">
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+            <!-- Thông tin đăng nhập -->
+            {{#each account.login}}
+                            <div class="cell">
+                                <div class="grid-x grid-margin-x">
+                                    <div class="cell medium-4 medium-offset-4">
+                                        <div class="input-group">
+                                            <span class="input-group-label"><i class="fa {{this.key}}"></i></span>
+                                            <input id="{{this.id}}" placeholder="{{this.value}}"
+                                                class="input-group-field" type="{{this.type}}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+            <!-- End Thông tin tài khoản -->
+
+            <!-- SUBMIT -->
+            <div class="cell">
+                <div class="text-center">
+                    <input type="submit" class="button" value="Đăng nhập">
+                </div>
+            </div>
+            <!-- End SUBMIT -->
+            <div class="cell">
+                    <div class="text-center">
+                        <p>Quên mật khẩu? Nhấn vào <a href="forgetpassword.html">đây</a></p>
+                    </div>
+                </div>
+        </div>
+    </form>
+</div>
