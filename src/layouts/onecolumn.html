@@ -2,28 +2,36 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhà đất Vũng Tàu</title>
-    <link rel="icon" type="image/png" href="{{root}}assets/img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="{{root}}assets/img/favicon-16x16.png" sizes="16x16" />
-    <link rel="stylesheet" href="{{root}}assets/css/app.css">
-  </head>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhà đất Vũng Tàu</title>
+  <link rel="icon" type="image/png" href="{{root}}assets/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{root}}assets/img/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+
 <body>
-
-{{> header}}
-
-<div class="grid-container page-body">
-  <div class="grid-x grid-margin-x">
-    <div class="cell">
-      {{> body}}
+  <div class="grid-y medium-grid-frame">
+    <div class="cell shrink header medium-cell-block-container">
+      {{> header}}
+    </div>
+    <div class="cell medium-auto medium-cell-block-container">
+      <div class="grid-container page-body">
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            {{> body}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cell shrink footer">
+      {{> footer}}
     </div>
   </div>
-</div>
-{{> footer}}
-
-<script src="{{root}}assets/js/app.js"></script>
+    <script src="{{root}}assets/js/app.js"></script>
 </body>
+
 </html>
