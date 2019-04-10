@@ -65,9 +65,10 @@
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
+// $global-font-size: 100%;
+$global-font-size: 14px;
 $global-width: rem-calc(1000);
-$global-lineheight: 1.3;
+$global-lineheight: 1.4;
 $foundation-palette: (
   primary: #F1592A,
   secondary: #145995,
@@ -85,14 +86,14 @@ $body-background: $white;
 $body-font-color: $black;
 $body-font-family: Arial, sans-serif;
 $body-antialiased: true;
-$global-margin: 0.5rem;
-$global-padding: 0.5rem;
+$global-margin: 0.4rem;
+$global-padding: 0.4rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
-$global-menu-padding: 0.7rem 1rem;
-$global-menu-nested-margin: 1rem;
+$global-menu-padding: 0.8rem 0.8rem;
+$global-menu-nested-margin: 0.7rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
 $global-prototype-breakpoints: false;

@@ -94,7 +94,7 @@ select {
 form {
   input,
   select {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem !important;
     @include breakpoint(small only) {
       margin-bottom: 0rem !important;
     }
@@ -175,10 +175,10 @@ blockquote {
 		color: $red;
 		border: 1px solid $red;
     font-size: 0.7rem;
-    padding: 0.1rem 0.3rem;
-    margin-right: 0.2rem;
+    padding: 0.06rem 0.3rem;
+    margin-right: 0.3rem;
 		border-radius: 0.2rem;
-		vertical-align: middle;
+		vertical-align: text-top;
 		@include animation(1s,2s,vip-flash, alternate, both);
 		
   }
@@ -192,27 +192,28 @@ header {
   padding-top: 0.8rem;
   .logo {
     img{
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.2rem;
     }
     .domain{
       font-weight: bold;
       margin-bottom: 0;
-      font-size: 1.2rem; 
+      font-size: 1.3rem; 
+      color: $tertiary-color;
     }
     .subtitle{    
       color: $primary-color; 
-      font-size: 0.7rem; 
+      font-size: 0.8rem; 
       line-height: 0.8rem;  
     }
   }
   .slogan {
-    padding-top: 1.8rem;
+    padding-top: 1.5rem;
     line-height: 1.7rem;
     font-weight: bold;
     color: $primary-color;
     &.subheader{
       padding-top: 0;
-      margin-bottom: 1rem;
+      margin-bottom: 1.4rem;
     }
     @include breakpoint(small only) {
       font-size: 1.3rem;
@@ -267,6 +268,7 @@ footer {
 .main-menu {
   background: $primary-color;
   padding: 0;
+  margin-bottom: 1rem;
   .menu {
     li {
       a {
@@ -388,8 +390,7 @@ footer {
     border: 1px solid $light-gray;
   }
   .box-content {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
   }
   &.info {
     margin-top: 0.5rem;
@@ -462,7 +463,7 @@ footer {
   .item {
     @include background("icon-bullet.svg");
     background-position: left 0.7rem;
-    padding: 0.3rem;
+    padding: 0.25rem;
     span {
       font-size: 0.825rem;
       line-height: 0.625rem;
@@ -563,12 +564,9 @@ footer {
     margin-bottom: 1rem;
   }
 }
-#breadcrumbs {
-  margin-top: 0.8rem;
-}
 .product {
   .title {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   nav {
     margin: auto;
@@ -583,6 +581,7 @@ footer {
       }
       td {
         font-size: 0.825rem;
+        padding-bottom:0.5rem;
         &.key {
           font-weight: bold;
           text-align: right;
@@ -719,10 +718,18 @@ footer {
 
 .top-bar {
   background: darken($secondary-color, 10%);
+  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
-  span {
+  p,span {
     font-size: 0.9rem;
     color: $white;
+    margin-bottom:0;
+  }
+  hr{
+    width:100%;
+    margin:0.1rem;
+    opacity:0;
   }
   strong {
     &.primary {
@@ -735,6 +742,12 @@ footer {
 }
 
 #register{
-  .input-group-label{
-    width:2.8rem;
-  }}
+  .input-group{
+    margin-bottom: 0.5rem !important;
+    .input-group-label{
+      width:2.8rem;
+      height: 2.47143rem;
+      
+    }
+  }  
+}
