@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
 <body>
-
+    <div class="grid-container" id="container">
 {{> header}}
 
 {{#ifpage 'index'}}
@@ -21,8 +21,7 @@
 {{#unlesspage 'index' 'postsuccess'}}
   {{> breadcrumbs}}
 {{/unlesspage}}
-
-<div class="grid-container page-body">
+<div class="grid-container">
   <div class="grid-x grid-margin-x">
     <div class="medium-9 cell">
       {{> body}}
@@ -31,15 +30,14 @@
       {{> sidebar}}
     </div>
   </div>
-</div>
 
 
 {{#ifpage 'index'}}
   {{> userpost}}
 {{/ifpage}}
-
+</div>
 {{> footer}}
-
+</div>
 <script src="{{root}}assets/js/app.js"></script>
 </body>
 </html>

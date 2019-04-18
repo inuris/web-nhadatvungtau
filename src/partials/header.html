@@ -1,47 +1,47 @@
-<div class="top-bar-container" data-sticky-container>
-    <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-        <div class="top-bar">
-            <p><strong class="secondary">Ms Viên</strong> : <strong class="primary">0937 414 449</strong>  / <strong class="secondary">Ms Loan</strong> : <strong class="primary">0358 370 737</strong> - Thời gian làm việc: <strong class="primary">8h-11h30; 14h-17h30</strong> (Từ Thứ 2-Thứ 7)</p>
-            <hr>
-            <p>Hotline: <strong class="secondary">Mr. Quý</strong> : <strong class="primary">0702 69 09 99</strong>  / <strong class="secondary">Mr Phúc</strong> : <strong class="primary">0901 62 66 99</strong></p>
-        </div>
-    </div>
-</div>
 <header id="page-header">
-    <div class="grid-container">
-        <div class="grid-x grid-12">
-            <div class="cell medium-4 small-12 text-center">
-                <a class="logo align-center" href=".">
-                    <img src="{{root}}assets/img/logo.png">
-                    <p class="domain">NHADATVUNGTAU.COM</p>
-                    <p class="subtitle">Không Gian Bất Động Sản Hoàn Hảo</p>
-                </a>                
+    <div class="grid-x grid-margin-x">
+        <div class="cell top-bar-container" data-sticky-container>
+            <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+                <div class="top-bar">
+                    <p><strong class="secondary">Ms Viên</strong> : <strong class="primary">0937 414 449</strong> /
+                        <strong class="secondary">Ms Loan</strong> : <strong class="primary">0358 370 737</strong> -
+                        Thời gian làm việc: <strong class="primary">8h-11h30; 14h-17h30</strong> (Từ Thứ 2-Thứ 7)</p>
+                    <hr>
+                    <p>Hotline: <strong class="secondary">Mr. Quý</strong> : <strong class="primary">0702 69 09
+                            99</strong> / <strong class="secondary">Mr Phúc</strong> : <strong class="primary">0901 62
+                            66 99</strong></p>
+                </div>
             </div>
-            <div class="cell medium-8 small-12">
-                <div class="grid-x">
-                    <div class="cell small-12 text-center">
-                        <h1 class="slogan">BẤT ĐỘNG SẢN HÀNG ĐẦU VŨNG TÀU</h1>
-                        <h1 class="slogan subheader">CHÍNH XÁC - TIỆN ÍCH - UY TÍN</h1>
-                    </div>
-                    <div class="cell small-12">
-                        <ul class="menu simple align-right">
-                            <li><a href="postnew.html">Đăng tin miễn phí</a></li>
-                            <li><a href="register.html">Đăng ký thành viên</a></li>                            
-                            <li><a href="login.html">Đăng nhập</a></li>
-                            <li><a href="account.html">Tài khoản</a></li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="cell medium-4 small-12 text-center">
+            <a class="logo align-center" href=".">
+                <img src="{{root}}assets/img/logo.png">
+                <p class="domain">NHADATVUNGTAU.COM</p>
+                <p class="subtitle">Không Gian Bất Động Sản Hoàn Hảo</p>
+            </a>
+        </div>
+        <div class="cell medium-8 small-12">
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-12 text-center">
+                    <h1 class="slogan">BẤT ĐỘNG SẢN HÀNG ĐẦU VŨNG TÀU</h1>
+                    <h1 class="slogan subheader">CHÍNH XÁC - TIỆN ÍCH - UY TÍN</h1>
+                </div>
+                <div class="cell small-12">
+                    <ul class="menu simple align-right">
+                        <li><a href="postnew.html">Đăng tin miễn phí</a></li>
+                        <li><a href="register.html">Đăng ký thành viên</a></li>
+                        <li><a href="login.html">Đăng nhập</a></li>
+                        <li><a href="account.html">Tài khoản</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-</header>
+    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+    </div>
+    <nav id="responsive-menu" class="main-menu" data-animate="hinge-in-from-top hinge-out-from-top">
 
-<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-</div>
-<nav id="responsive-menu" class="main-menu" data-animate="hinge-in-from-top hinge-out-from-top">
-    <div class="grid-container">
         <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
             {{#each menu}}
             <li class="nav-item">
@@ -56,5 +56,5 @@
             </li>
             {{/each}}
         </ul>
-    </div>
-</nav>
+    </nav>
+</header>

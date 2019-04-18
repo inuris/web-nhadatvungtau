@@ -2,31 +2,60 @@
   href: '.'
 - main: Giới thiệu
   href: about.html
-- main: Chuyển nhượng dự án
-  href: list.html
-  subcat: 
-  - sub: Nhà phố
-  - sub: Nhà riêng
-  - sub: Biệt thự
-  - sub: Chung cư
+- main: Dự án
+  href: project.html
 - main: Nhà đất cho thuê
   href: list.html
   subcat:
+  - sub: Cho thuê nhà phố, nhà riêng
+  - sub: Cho thuê biệt thự
+  - sub: Cho thuê căn hộ chung cư
+  - sub: Cho thuê nhà hàng, khách sạn
+  - sub: Cho thuê văn phòng, phòng trọ, mặt bằng
+  - sub: Cho thuê trang trại, khu nghỉ dưỡng
+  - sub: Cho thuê mặt bằng, cửa hàng
+  - sub: Nhà đất giá rẻ
+  - sub: Cho thuê đất nông, lâm nghiệp
+  - sub: Cho thuê các loại khác
+  - sub: Chuyển nhượng dự án
+  - sub: Homestay
+  - sub: Đầu tư xây dựng
+  - sub: Mặt bằng cho thuê
   - sub: Nhà phố
-  - sub: Nhà riêng
-  - sub: Biệt thự
-  - sub: Chung cư
+  - sub: Căn hộ
 - main: Nhà đất bán
   href: list.html
   subcat: 
-  - sub: Nhà phố
-  - sub: Nhà riêng
+  - sub: Cần bán nhà phố, nhà riêng
+  - sub: Cần bán biệt thự
+  - sub: Cần bán căn hộ chung cư
+  - sub: Cần bán nhà hàng, khách sạn
+  - sub: Cần bán văn phòng, phòng trọ, mặt bằng
+  - sub: Cần bán trang trại, khu nghỉ dưỡng
+  - sub: Cần bán mặt bằng, cửa hàng
+  - sub: Cần bán đất nền, thổ cư, phân lô
+  - sub: Cần bán đất nông, lâm nghiệp
+  - sub: Cần bán các loại khác
+- main: Cần mua - Cần thuê
+  href: list.html
+  subcat: 
+  - sub: Nhà phố, nhà riêng
   - sub: Biệt thự
-  - sub: Chung cư
+  - sub: Căn hộ chung cư
+  - sub: Nhà hàng, khách sạn
+  - sub: Văn phòng, phòng trọ, mặt bằng
+  - sub: Trang trại, khu nghỉ dưỡng
+  - sub: Mặt bằng, cửa hàng
+  - sub: Đất nề, thổ cư, phân lô
+  - sub: Đất nông, lâm nghiệp
+  - sub: Các loại khác
+  - sub: Khách sạn
 - main: Tin tức
   href: news.html
   subcat: 
   - sub: Tin BĐS nổi bật
   - sub: Thị trường
+- main: Tuyển dụng
+  href: about.html
 - main: Liên hệ
   href: contact.html

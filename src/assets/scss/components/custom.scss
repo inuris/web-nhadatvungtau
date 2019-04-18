@@ -2,6 +2,7 @@
  ** GENERAL
  **/
 $red: #f00;
+$body-background: #f5f5f5;
 //.cell{ border:1px solid red;}
 
 @mixin transition($transition...) {
@@ -183,13 +184,19 @@ blockquote {
 		
   }
 }
-
+body{
+  background: $body-background;
+}
+#container{
+  background: $white;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 /**
  ** HEADER
  **/
 
 header {
-  padding-top: 0.8rem;
   .logo {
     img{
       margin-bottom: 0.2rem;
@@ -220,7 +227,7 @@ header {
     }
   }
   .menu {
-    padding: 0.5rem 0;
+    padding: 0;
     a {
       color: $black;
       font-size: 0.9rem;
@@ -581,7 +588,8 @@ footer {
       }
       td {
         font-size: 0.825rem;
-        padding-bottom:0.5rem;
+        padding-top:0.3rem;
+        padding-bottom:0.3rem;
         &.key {
           font-weight: bold;
           text-align: right;

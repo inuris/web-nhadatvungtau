@@ -11,51 +11,51 @@
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
 <body>
-
-<div class="top-bar-container" data-sticky-container>
-    <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-        <div class="top-bar">
-            <p><strong class="secondary">Ms Viên</strong> : <strong class="primary">0937 414 449</strong>  / <strong class="secondary">Ms Loan</strong> : <strong class="primary">0358 370 737</strong> - Thời gian làm việc: <strong class="primary">8h-11h30; 14h-17h30</strong> (Từ Thứ 2-Thứ 7)</p>
-            <hr>
-            <p>Hotline: <strong class="secondary">Mr. Quý</strong> : <strong class="primary">0702 69 09 99</strong>  / <strong class="secondary">Mr Phúc</strong> : <strong class="primary">0901 62 66 99</strong></p>
-        </div>
-    </div>
-</div>
+    <div class="grid-container" id="container">
 <header id="page-header">
-    <div class="grid-container">
-        <div class="grid-x grid-12">
-            <div class="cell medium-4 small-12 text-center">
-                <a class="logo align-center" href=".">
-                    <img src="assets/img/logo.png">
-                    <p class="domain">NHADATVUNGTAU.COM</p>
-                    <p class="subtitle">Không Gian Bất Động Sản Hoàn Hảo</p>
-                </a>                
+    <div class="grid-x grid-margin-x">
+        <div class="cell top-bar-container" data-sticky-container>
+            <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+                <div class="top-bar">
+                    <p><strong class="secondary">Ms Viên</strong> : <strong class="primary">0937 414 449</strong> /
+                        <strong class="secondary">Ms Loan</strong> : <strong class="primary">0358 370 737</strong> -
+                        Thời gian làm việc: <strong class="primary">8h-11h30; 14h-17h30</strong> (Từ Thứ 2-Thứ 7)</p>
+                    <hr>
+                    <p>Hotline: <strong class="secondary">Mr. Quý</strong> : <strong class="primary">0702 69 09
+                            99</strong> / <strong class="secondary">Mr Phúc</strong> : <strong class="primary">0901 62
+                            66 99</strong></p>
+                </div>
             </div>
-            <div class="cell medium-8 small-12">
-                <div class="grid-x">
-                    <div class="cell small-12 text-center">
-                        <h1 class="slogan">BẤT ĐỘNG SẢN HÀNG ĐẦU VŨNG TÀU</h1>
-                        <h1 class="slogan subheader">CHÍNH XÁC - TIỆN ÍCH - UY TÍN</h1>
-                    </div>
-                    <div class="cell small-12">
-                        <ul class="menu simple align-right">
-                            <li><a href="postnew.html">Đăng tin miễn phí</a></li>
-                            <li><a href="register.html">Đăng ký thành viên</a></li>                            
-                            <li><a href="login.html">Đăng nhập</a></li>
-                            <li><a href="account.html">Tài khoản</a></li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="cell medium-4 small-12 text-center">
+            <a class="logo align-center" href=".">
+                <img src="assets/img/logo.png">
+                <p class="domain">NHADATVUNGTAU.COM</p>
+                <p class="subtitle">Không Gian Bất Động Sản Hoàn Hảo</p>
+            </a>
+        </div>
+        <div class="cell medium-8 small-12">
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-12 text-center">
+                    <h1 class="slogan">BẤT ĐỘNG SẢN HÀNG ĐẦU VŨNG TÀU</h1>
+                    <h1 class="slogan subheader">CHÍNH XÁC - TIỆN ÍCH - UY TÍN</h1>
+                </div>
+                <div class="cell small-12">
+                    <ul class="menu simple align-right">
+                        <li><a href="postnew.html">Đăng tin miễn phí</a></li>
+                        <li><a href="register.html">Đăng ký thành viên</a></li>
+                        <li><a href="login.html">Đăng nhập</a></li>
+                        <li><a href="account.html">Tài khoản</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-</header>
+    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+    </div>
+    <nav id="responsive-menu" class="main-menu" data-animate="hinge-in-from-top hinge-out-from-top">
 
-<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-</div>
-<nav id="responsive-menu" class="main-menu" data-animate="hinge-in-from-top hinge-out-from-top">
-    <div class="grid-container">
         <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
             <li class="nav-item">
                 <a href=".">Trang chủ</a>
@@ -64,30 +64,58 @@
                 <a href="about.html">Giới thiệu</a>
             </li>
             <li class="nav-item">
-                <a href="list.html">Chuyển nhượng dự án</a>
-                <ul class="menu">
-                    <li><a href="list.html">Nhà phố</a></li>
-                    <li><a href="list.html">Nhà riêng</a></li>
-                    <li><a href="list.html">Biệt thự</a></li>
-                    <li><a href="list.html">Chung cư</a></li>
-                </ul>
+                <a href="project.html">Dự án</a>
             </li>
             <li class="nav-item">
                 <a href="list.html">Nhà đất cho thuê</a>
                 <ul class="menu">
+                    <li><a href="list.html">Cho thuê nhà phố, nhà riêng</a></li>
+                    <li><a href="list.html">Cho thuê biệt thự</a></li>
+                    <li><a href="list.html">Cho thuê căn hộ chung cư</a></li>
+                    <li><a href="list.html">Cho thuê nhà hàng, khách sạn</a></li>
+                    <li><a href="list.html">Cho thuê văn phòng, phòng trọ, mặt bằng</a></li>
+                    <li><a href="list.html">Cho thuê trang trại, khu nghỉ dưỡng</a></li>
+                    <li><a href="list.html">Cho thuê mặt bằng, cửa hàng</a></li>
+                    <li><a href="list.html">Nhà đất giá rẻ</a></li>
+                    <li><a href="list.html">Cho thuê đất nông, lâm nghiệp</a></li>
+                    <li><a href="list.html">Cho thuê các loại khác</a></li>
+                    <li><a href="list.html">Chuyển nhượng dự án</a></li>
+                    <li><a href="list.html">Homestay</a></li>
+                    <li><a href="list.html">Đầu tư xây dựng</a></li>
+                    <li><a href="list.html">Mặt bằng cho thuê</a></li>
                     <li><a href="list.html">Nhà phố</a></li>
-                    <li><a href="list.html">Nhà riêng</a></li>
-                    <li><a href="list.html">Biệt thự</a></li>
-                    <li><a href="list.html">Chung cư</a></li>
+                    <li><a href="list.html">Căn hộ</a></li>
                 </ul>
             </li>
             <li class="nav-item">
                 <a href="list.html">Nhà đất bán</a>
                 <ul class="menu">
-                    <li><a href="list.html">Nhà phố</a></li>
-                    <li><a href="list.html">Nhà riêng</a></li>
+                    <li><a href="list.html">Cần bán nhà phố, nhà riêng</a></li>
+                    <li><a href="list.html">Cần bán biệt thự</a></li>
+                    <li><a href="list.html">Cần bán căn hộ chung cư</a></li>
+                    <li><a href="list.html">Cần bán nhà hàng, khách sạn</a></li>
+                    <li><a href="list.html">Cần bán văn phòng, phòng trọ, mặt bằng</a></li>
+                    <li><a href="list.html">Cần bán trang trại, khu nghỉ dưỡng</a></li>
+                    <li><a href="list.html">Cần bán mặt bằng, cửa hàng</a></li>
+                    <li><a href="list.html">Cần bán đất nền, thổ cư, phân lô</a></li>
+                    <li><a href="list.html">Cần bán đất nông, lâm nghiệp</a></li>
+                    <li><a href="list.html">Cần bán các loại khác</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="list.html">Cần mua - Cần thuê</a>
+                <ul class="menu">
+                    <li><a href="list.html">Nhà phố, nhà riêng</a></li>
                     <li><a href="list.html">Biệt thự</a></li>
-                    <li><a href="list.html">Chung cư</a></li>
+                    <li><a href="list.html">Căn hộ chung cư</a></li>
+                    <li><a href="list.html">Nhà hàng, khách sạn</a></li>
+                    <li><a href="list.html">Văn phòng, phòng trọ, mặt bằng</a></li>
+                    <li><a href="list.html">Trang trại, khu nghỉ dưỡng</a></li>
+                    <li><a href="list.html">Mặt bằng, cửa hàng</a></li>
+                    <li><a href="list.html">Đất nề, thổ cư, phân lô</a></li>
+                    <li><a href="list.html">Đất nông, lâm nghiệp</a></li>
+                    <li><a href="list.html">Các loại khác</a></li>
+                    <li><a href="list.html">Khách sạn</a></li>
                 </ul>
             </li>
             <li class="nav-item">
@@ -98,11 +126,14 @@
                 </ul>
             </li>
             <li class="nav-item">
+                <a href="about.html">Tuyển dụng</a>
+            </li>
+            <li class="nav-item">
                 <a href="contact.html">Liên hệ</a>
             </li>
         </ul>
-    </div>
-</nav>
+    </nav>
+</header>
   <div class="grid-container">
       <div id="category-boxes" class="grid-x grid-10">
           <div class="cell">
@@ -186,8 +217,7 @@
           </a>
           </div>
       </div>
-  </div>
-<div class="grid-container page-body">
+  </div><div class="grid-container">
   <div class="grid-x grid-margin-x">
     <div class="medium-9 cell">
       <div id="news" class="box">
@@ -634,10 +664,8 @@
       </div>
       <!-- End Ads -->    </div>
   </div>
-</div>
 
 
-  <div class="grid-container">
       <div class="grid-x grid-margin-x">
           <div class="cell">
               <div id="userpost" class="box">
@@ -924,8 +952,7 @@
                   </div>
               </div>
           </div>
-      </div>
-  </div>
+      </div></div>
 <footer id="page-footer">
     <div class="grid-x top">
         <div class="grid-container">
@@ -942,12 +969,15 @@
     <div class="grid-x bottom">
         <div class="grid-container">
             <div class="cell small-12">
-                <p class="text-center">Bản quyền 2019 Nhà Đất Vũng Tàu</p>
+                <p class="text-center"><strong>CÔNG TY TNHH TM-DV MÔI GIỚI BẤT ĐỘNG SẢN NANO</strong></p>
+                <p class="text-center">Số 114 Nam Kỳ Khởi Nghĩa, P.Thắng Tam, Tp. Vũng Tàu, tỉnh Bà Rịa Vũng Tàu.</p>
+                <p class="text-center">Địện thoại: Mr Quý: 0702 69 09 99 / Mr Phúc : 0901 62 66 99  |  Email: batdongsannano@gmail.com</p>
+                <p class="text-center">® NhaDatVungTau.com giữ bản quyền website này. Việc sao chép một phần hoặc toàn bộ mà không được sử đồng ý bằng văn bản là vi phạm pháp luật.</p>
                 <p class="text-center">Thiết kế bởi <a href="http://bariavungtau.vnpt.vn/">VNPT Bà Rịa Vũng Tàu</a></p>
             </div>
         </div>
     </div>
-</footer>
+</footer></div>
 <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -14,24 +14,24 @@
 </head>
 
 <body>
+    <div class="grid-container" id="container">
   <div class="grid-y medium-grid-frame">
     <div class="cell shrink header medium-cell-block-container">
       {{> header}}
     </div>
     <div class="cell medium-auto medium-cell-block-container">
-      <div class="grid-container page-body">
         <div class="grid-x grid-margin-x">
           <div class="cell">
             {{> body}}
           </div>
         </div>
-      </div>
     </div>
     <div class="cell shrink footer">
       {{> footer}}
     </div>
   </div>
-    <script src="{{root}}assets/js/app.js"></script>
+  </div>
+  <script src="{{root}}assets/js/app.js"></script>
 </body>
 
 </html>
