@@ -52,6 +52,9 @@ $body-background: #f5f5f5;
 @mixin background($filename) {
   background: url(../../assets/img/#{$filename}) no-repeat;
 }
+#container{
+  position: relative;
+}
 h1,
 h2,
 h3 {
@@ -296,6 +299,7 @@ footer {
       
     }
     .submenu.is-dropdown-submenu {
+      z-index: 999;
       display:none;
       flex-flow: row wrap;
       justify-content: flex-start;
@@ -759,4 +763,18 @@ footer {
       
     }
   }  
+}
+.ads{
+  position: absolute;
+  top:10px;
+  width: 150px;
+  overflow: hidden;
+  &.ads-left{
+    left: -160px;
+    text-align: right;
+  }
+  &.ads-right{
+    right: -160px;
+    text-align: left;
+  }
 }
