@@ -1,0 +1,51 @@
+#detail{
+    .swiper-container {
+        width: 100%;
+        height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+    .gallery-top {
+        height: 80%;
+        width: 100%;
+    }
+    .gallery-thumbs {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+        height: 100%;
+        opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+    .swiper-button-white {
+        top: 40%;
+    }
+}
+#news{
+    .swiper-pagination-bullet{
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+        border-radius: none;
+        background: transparent;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        outline-width: 0;
+        span{
+            color: $primary-color;
+        }
+    }
+    .swiper-button-white {
+        top: 50%;
+    }
+}
+

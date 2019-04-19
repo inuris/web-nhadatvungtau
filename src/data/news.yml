@@ -1,7 +1,29 @@
 main:
-  - Hà Nội sẽ có thêm khu đô thị 22,8ha vào năm 2019
-  - Chúng ta chưa có nhiều người xứng đáng ở biệt thự
-  - Những nữ tướng khiến phái mạnh phải kính nể của ngành BĐS
+  - {
+      title: 'Hà Nội sẽ có thêm khu đô thị 22,8ha vào năm 2019', 
+      description: 'Sau hơn một tháng triển khai (từ 26/1/2019), Tính năng nổi bật trên đã thu hút trên 10% khách hàng sử dụng. Trong đó, số lượng chính khách hàng sử dụng “Tính năng nổi bật” nằm ở các nhóm: Tin Đặc biệt, Tin VIP 1, Tin VIP 2, Tin VIP3.',
+      image: 'item-1.png'
+    }
+  - {
+      title: 'Chúng ta chưa có nhiều người xứng đáng ở biệt thự', 
+      description: 'Tính năng nổi bật trên đã thu hút trên 10% khách hàng sử dụng. Trong đó, số lượng chính khách hàng sử dụng “Tính năng nổi bật” nằm ở các nhóm: Tin Đặc biệt, Tin VIP 1, Tin VIP 2, Tin VIP3.',
+      image: 'item-2.png'
+    }
+  - {
+      title: 'Những nữ tướng khiến phái mạnh phải kính nể của ngành BĐS', 
+      description: 'Trong đó, số lượng chính khách hàng sử dụng “Tính năng nổi bật” nằm ở các nhóm: Tin Đặc biệt, Tin VIP 1, Tin VIP 2, Tin VIP3.',
+      image: 'item-3.png'
+    }
+  - {
+      title: 'Căn hộ lý tưởng giá cả phải chăng tại trung tâm', 
+      description: 'Nhà 1 trệt 1 lửng 1 lầu cách bùng binh Mũ 700m • Thiết kế năng động , trẻ trung, không gian sống thông thoáng • Sàn thật 100 %, diện tích sử dụng lên đến 150m2',
+      image: 'item-4.png'
+    }
+  - {
+      title: 'Thông Tin Mua Bán và Cho Thuê', 
+      description: 'Sau hơn một tháng triển khai (từ 26/1/2019), Tính năng nổi bật trên đã thu hút trên 10% khách hàng sử dụng. Trong đó, số lượng chính khách hàng sử dụng “Tính năng nổi bật” nằm ở các nhóm: Tin Đặc biệt, Tin VIP 1, Tin VIP 2, Tin VIP3.',
+      image: 'item-5.png'
+    }
 featured:
   - {
       title: 'Căn hộ lý tưởng giá cả phải chăng tại trung tâm', 
@@ -67,8 +89,15 @@ featured:
     }
 userpost:
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+    vip: true
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+    vip: true
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+    vip: true  
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+    vip: true
+  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
+    vip: true  
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
     vip: true
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
@@ -76,11 +105,7 @@ userpost:
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-    vip: true
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-  - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703
-    vip: true
   - main: Bán nhà gấp, cao ốc A, Q.10, 2PN, 2WC, giá 1,4 tỷ. Tel. 0908857703

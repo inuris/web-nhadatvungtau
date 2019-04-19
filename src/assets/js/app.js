@@ -16,7 +16,7 @@ require('foundation-datepicker');
 
 
 $(document).foundation();
-
+require('./pages/index');
 require('./pages/detail');
 require('./pages/postmanagement');
 require('./pages/postnew');

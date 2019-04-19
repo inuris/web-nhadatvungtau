@@ -234,7 +234,7 @@ header {
       &:hover {
         color: $primary-color;
       }
-    }
+    }    
   }
 }
 
@@ -284,7 +284,7 @@ footer {
         @include transition(all 0.4s);
         &:hover {
           color: $white;
-          background-color: darken($primary-color, 10%);
+          background-color: lighten($primary-color, 10%);
         }
       }
       .submenu {
@@ -294,6 +294,38 @@ footer {
         }
       }      
       
+    }
+    .submenu.is-dropdown-submenu {
+      display:none;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-content:stretch;
+      width:660px;
+      border-top:1px solid darken($primary-color, 10%);
+      &>li.is-submenu-item{
+        display:none;
+        width: 220px;
+        border-right:1px solid darken($primary-color, 10%);
+        border-bottom:1px solid darken($primary-color, 10%);
+        a{
+          width:100%;
+          line-height: 1.5;
+          padding:0.6rem 1rem;
+          cursor: pointer;
+        }
+      }
+      &.js-dropdown-active{
+        display:flex;
+        li.is-submenu-item{
+          display:flex;
+        }
+      }
+      
+    }
+    li.is-dropdown-submenu-parent:nth-child(7){
+      .submenu.is-dropdown-submenu{
+        width:200px;
+      }
     }
   }
 }
@@ -447,7 +479,7 @@ footer {
     background-position: left 0.7rem;
     border-bottom: 1px dotted $light-gray;
     padding: 0.3rem;
-    a {
+    a, span {
       font-size: 0.825rem;
       line-height: 0.625rem;
       color: $black;
@@ -693,37 +725,6 @@ footer {
     }
   }
 }
-
-.swiper-container {
-  width: 100%;
-  height: 450px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
-}
-.gallery-top {
-  height: 80%;
-  width: 100%;
-}
-.gallery-thumbs {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-.gallery-thumbs .swiper-slide {
-  height: 100%;
-  opacity: 0.4;
-}
-.gallery-thumbs .swiper-slide-thumb-active {
-  opacity: 1;
-}
-.swiper-button-white {
-  top: 40%;
-}
-
 .top-bar {
   background: darken($secondary-color, 10%);
   flex-wrap: wrap;
