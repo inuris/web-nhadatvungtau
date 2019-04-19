@@ -32114,7 +32114,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Nodejs\web-nhadatvungtau\src\assets\js\app.js */"./src/assets/js/app.js");
+module.exports = __webpack_require__(/*! C:\NodeJS\nhadatvungtau\src\assets\js\app.js */"./src/assets/js/app.js");
 
 
 /***/ })
