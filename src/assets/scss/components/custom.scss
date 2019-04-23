@@ -2,7 +2,7 @@
  ** GENERAL
  **/
 $red: #f00;
-$body-background: #f5f5f5;
+$body-background: $tertiary-color, $white;
 //.cell{ border:1px solid red;}
 
 @mixin transition($transition...) {
@@ -51,6 +51,17 @@ $body-background: #f5f5f5;
 }
 @mixin background($filename) {
   background: url(../../assets/img/#{$filename}) no-repeat;
+}
+
+@mixin gradient($direction, $list) { 
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);  
+}
+body{
+  @include gradient(top, $body-background);
+  background-attachment: fixed;
 }
 h1,
 h2,
@@ -223,18 +234,32 @@ header {
       margin-bottom: 1.4rem;
     }
     @include breakpoint(small only) {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
+      &.subheader{
+        font-size: 1rem;
+      }
     }
   }
   .menu {
     padding: 0;
-    a {
-      color: $black;
-      font-size: 0.9rem;
-      &:hover {
-        color: $primary-color;
+    @include breakpoint(small only) {
+      justify-content: center;
+    }
+    li{      
+      text-align: center;
+      a {
+        color: $black;
+        font-size: 0.9rem;
+        &:hover {
+          color: $primary-color;
+        }
+      }   
+      @include breakpoint(small only) {
+        width:4.5rem;
+        justify-content: center !important;
       }
-    }    
+    }
+     
   }
 }
 
