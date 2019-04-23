@@ -46,6 +46,9 @@
     }
     .swiper-button-white {
         top: 50%;
+        @include breakpoint(small only) {
+            top: 28%;
+        }
     }
 }
 

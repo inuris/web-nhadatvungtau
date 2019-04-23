@@ -52,7 +52,6 @@ $body-background: $tertiary-color, $white;
 @mixin background($filename) {
   background: url(../../assets/img/#{$filename}) no-repeat;
 }
-<<<<<<< HEAD
 
 @mixin gradient($direction, $list) { 
   background: -webkit-linear-gradient($direction, $list);
@@ -63,10 +62,6 @@ $body-background: $tertiary-color, $white;
 body{
   @include gradient(top, $body-background);
   background-attachment: fixed;
-=======
-#container{
-  position: relative;
->>>>>>> f1aa88e947333ebe05cbdb2fb841e8c006fb93bd
 }
 h1,
 h2,
@@ -230,13 +225,13 @@ header {
     }
   }
   .slogan {
-    padding-top: 1.5rem;
+    padding-top: 1.8rem;
     line-height: 1.7rem;
     font-weight: bold;
     color: $primary-color;
     &.subheader{
       padding-top: 0;
-      margin-bottom: 1.4rem;
+      margin-bottom: 2rem;
     }
     @include breakpoint(small only) {
       font-size: 1.4rem;
@@ -247,9 +242,7 @@ header {
   }
   .menu {
     padding: 0;
-    @include breakpoint(small only) {
-      justify-content: center;
-    }
+    
     li{      
       text-align: center;
       a {
@@ -259,9 +252,16 @@ header {
           color: $primary-color;
         }
       }   
+      
+    }    
+    &.simple{
       @include breakpoint(small only) {
-        width:4.5rem;
-        justify-content: center !important;
+        justify-content: center;
+        li{
+          @include breakpoint(small only) {
+            justify-content: center !important;
+          }
+        }
       }
     }
      
@@ -510,6 +510,7 @@ footer {
     background-position: left 0.7rem;
     border-bottom: 1px dotted $light-gray;
     padding: 0.3rem;
+    width: 100%;
     a, span {
       font-size: 0.825rem;
       line-height: 0.625rem;
