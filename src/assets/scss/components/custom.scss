@@ -52,6 +52,7 @@ $body-background: $tertiary-color, $white;
 @mixin background($filename) {
   background: url(../../assets/img/#{$filename}) no-repeat;
 }
+<<<<<<< HEAD
 
 @mixin gradient($direction, $list) { 
   background: -webkit-linear-gradient($direction, $list);
@@ -62,6 +63,10 @@ $body-background: $tertiary-color, $white;
 body{
   @include gradient(top, $body-background);
   background-attachment: fixed;
+=======
+#container{
+  position: relative;
+>>>>>>> f1aa88e947333ebe05cbdb2fb841e8c006fb93bd
 }
 h1,
 h2,
@@ -321,6 +326,7 @@ footer {
       
     }
     .submenu.is-dropdown-submenu {
+      z-index: 999;
       display:none;
       flex-flow: row wrap;
       justify-content: flex-start;
@@ -784,4 +790,18 @@ footer {
       
     }
   }  
+}
+.ads{
+  position: absolute;
+  top:10px;
+  width: 150px;
+  overflow: hidden;
+  &.ads-left{
+    left: -160px;
+    text-align: right;
+  }
+  &.ads-right{
+    right: -160px;
+    text-align: left;
+  }
 }
