@@ -332,17 +332,20 @@ footer {
       justify-content: flex-start;
       align-content:stretch;
       width:660px;
-      border-top:1px solid darken($primary-color, 10%);
+      border-top:1px solid lighten($primary-color, 18%);
       &>li.is-submenu-item{
         display:none;
         width: 220px;
-        border-right:1px solid darken($primary-color, 10%);
-        border-bottom:1px solid darken($primary-color, 10%);
+        border-right:1px solid lighten($primary-color, 18%);
+        border-bottom:1px solid lighten($primary-color, 18%);
         a{
           width:100%;
           line-height: 1.5;
           padding:0.6rem 1rem;
           cursor: pointer;
+        }
+        &:hover{
+          background: lighten($primary-color, 15%);
         }
       }
       &.js-dropdown-active{
