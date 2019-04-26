@@ -395,13 +395,13 @@ $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-arrow-padding: 1.5rem;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $primary-color;
-$dropdownmenu-submenu-background: lighten($primary-color, 8%);
+$dropdownmenu-submenu-background: lighten($primary-color, 38%);
 $dropdownmenu-padding: $global-menu-padding;
 $dropdownmenu-nested-margin: 0;
 $dropdownmenu-submenu-padding: $dropdownmenu-padding;
 $dropdownmenu-border: 0; //1px solid $medium-gray;
-$dropdown-menu-item-color-active: $white;
-$dropdown-menu-item-background-active: lighten($primary-color, 8%);
+$dropdown-menu-item-color-active: $primary-color;
+$dropdown-menu-item-background-active: lighten($primary-color, 38%);
 
 // 19. Flexbox Utilities
 // ---------------------
