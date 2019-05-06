@@ -1,8 +1,8 @@
 ---
-layout: onecolumn
+layout: project
 title: Dự Án
 ---
-<div id="list" class="no-box product">
+<div id="userpost" class="no-box product">
     <div class="grid-x grid-padding-y">
         <div class="title">
             <h1>{{title}}</h1>
@@ -10,7 +10,7 @@ title: Dự Án
 
         <div class="cell item">
             <div class="grid-x grid-padding-y">
-                {{#each news.userpost}}
+                {{#each news.project}}
                 <div class="item cell medium-4">
                     <div class="grid-x grid-margin-x">
                         <div class="cell small-4">
@@ -23,14 +23,13 @@ title: Dự Án
                         <div class="cell small-8">
                             <div class="content">
                                 <a href="#">
-                                    <h4 class="{{#if this.vip}}vip{{/if}}">{{this.main}}</h4>
+                                    <h4>{{this}}</h4>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 {{/each}}
-
             </div>
         </div>
 
