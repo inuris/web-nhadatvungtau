@@ -6,13 +6,13 @@
                         <h2>Thông Tin Mua Bán và Cho Thuê</h2>
                     </div>
                     <div class="cell auto text-right">
-                        <a href="list.html">Xem tất cả&nbsp;&nbsp;<i class="fa fa-caret-right"></i>
-                        </a>
+                        <!-- <a href="list.html">Xem tất cả&nbsp;&nbsp;<i class="fa fa-caret-right"></i>
+                        </a> -->
                     </div>
                 </div>
                 <div class="box-container grid-x grid-padding-y">
                     {{#each news.userpost}}
-                    <div class="item cell medium-4">
+                    <div class="cell item medium-4">
                         <div class="grid-x grid-margin-x">
                             <div class="cell small-4">
                                 <div class="thumbnail">
@@ -31,6 +31,9 @@
                         </div>
                     </div>
                     {{/each}}
+                    <div class="cell item text-right">
+                        <a class="viewall" href="list.html">Xem tất cả &gt;&gt;&gt;</a>
+                    </div>
                 </div>
             </div>
         </div>
