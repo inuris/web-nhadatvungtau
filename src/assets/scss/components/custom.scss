@@ -158,12 +158,21 @@ a {
   &.secondary-color {
     color: $secondary-color;
   }
+  &.tertiary-color {
+    color: $tertiary-color;
+  }
   &.alert-color {
     color: $alert-color;
   }
   &.success-color {
     color: $success-color;
   }
+}
+button{
+    &.gray{
+      background: $dark-gray;
+      color: $white;
+    }
 }
 blockquote {
   border-left: 3px solid $light-gray;
@@ -559,18 +568,16 @@ footer {
       }
     }
   }
-  .rule-description{
-    li.item{
-      list-style: none;
-      @include background("icon-bullet.svg");
-      background-position: left 0.7rem;
-      padding: 0.25rem;
-      span {
+  .item{
+    list-style: none;
+    @include background("icon-bullet.svg");
+    background-position: left 0.7rem;
+    padding: 0.25rem;
+    span {
       font-size: 0.825rem;
       line-height: 0.625rem;
       color: $black;
       padding-left: 0.8rem;
-      }
     }
   }
   .select{
