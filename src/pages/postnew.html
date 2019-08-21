@@ -374,18 +374,59 @@ title: Đăng tin nhà đất miễn phí
                     <div class="title-bar">
                         <h2>Hình thức đăng</h2>
                     </div>
-                    <div class="box-content">
+                    <div class="box-content">                        
                         <div class="grid-x">
-                            {{#each post.rule}}
-                            <div class="cell">
-                                <div class="item">
-                                    <span>{{this}}</span>
+                            <fieldset class="cell">
+                                <input class="radio" type="radio" name="posttype" value="normal" id="posttype_normal" required checked><label for="posttype_normal">Tin thường</label>
+                                <ul class="rule-description">   
+                                    <li class="item">
+                                        <span>Tin thường có chữ màu đen, nằm dưới tin <strong style="color:#f00">VIP</strong>.</span>
+                                    </li>
+                                    <li class="item">
+                                        <span>Bị trôi trang nhanh do có nhiều tin đăng trong ngày.</span>
+                                    </li>
+                                    <li class="item">
+                                        <span>Chờ kiểm duyệt trước khi được hiển thị, thời gian chờ duyệt từ 5 phút đến vài tiếng tùy thuộc vào số lượng tin đăng trong ngày.</span>
+                                    </li>
+                                    <li class="item">
+                                        <span>Thời gian hiển thị 90 ngày.</span>
+                                    </li>
+                                </ul>
+                                <hr/ >
+                                <input class="radio" type="radio" name="posttype" value="vip" id="posttype_vip"><label for="posttype_vip">Tin VIP<h4 class="vip"></h4></label>
+                                <ul class="rule-description">   
+                                    <li class="item">
+                                        <span style="color:#f00">Thời gian hiển thị tin = số ngày VIP + 60 ngày như tin thường</span>
+                                    </li>
+                                    <li class="item">
+                                        <span>Tin VIP có biểu tượng VIP màu <strong style="color:#f00">đỏ</strong>, nằm trên tin thường</span>
+                                    </li>
+                                    <li class="item">
+                                        <span>Hiệu quả cao, số lượt xem tin VIP cao hơn từ 30 đến 40 lần so với tin thường.</span>
+                                    </li>
+                                    <li class="item">
+                                        <span>Hiển thị ngay sau khi đăng</span>
+                                    </li>
+                                </ul>
+                                <div class="select">
+                                    <select id="loaivip">
+                                        <option>--- Loại VIP ---</option>
+                                        <option>VIP 1</option>
+                                        <option>VIP 2</option>
+                                    </select>
+                                    <span> x </span>
+                                    <select id="songay">
+                                        <option>--- Số ngày ---</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                    <span> = <strong style="color:#f00">0</strong> đ</span>
                                 </div>
-                            </div>
-                            {{/each}}
-                            <div class="cell">
+                                <p>Số tài khoản: <strong style="color:#00f">0</strong> đ</p>
+                            </fieldset>
+                            <!-- <div class="cell">
                                 <h6 class="notice">Nếu gặp khó khăn trong vấn đề đăng tin, xin vui lòng liên hệ bộ phận hỗ trợ đăng tin để được hướng dẫn.</h6>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

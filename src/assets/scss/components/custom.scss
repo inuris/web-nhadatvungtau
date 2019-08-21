@@ -548,15 +548,34 @@ footer {
   }
 }
 .rule-list {
-  .item {
-    @include background("icon-bullet.svg");
-    background-position: left 0.7rem;
-    padding: 0.25rem;
-    span {
+  label{
+    font-weight: 700;
+    vertical-align: middle;
+    .vip{
+      display: inline-block;
+      margin-left:5px;
+      &::before{
+        vertical-align: middle;
+      }
+    }
+  }
+  .rule-description{
+    li.item{
+      list-style: none;
+      @include background("icon-bullet.svg");
+      background-position: left 0.7rem;
+      padding: 0.25rem;
+      span {
       font-size: 0.825rem;
       line-height: 0.625rem;
       color: $black;
       padding-left: 0.8rem;
+      }
+    }
+  }
+  .select{
+    select{
+      width:30%;
     }
   }
 }
